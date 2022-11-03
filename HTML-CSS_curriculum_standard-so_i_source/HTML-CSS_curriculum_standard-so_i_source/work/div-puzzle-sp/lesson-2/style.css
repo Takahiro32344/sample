@@ -17,7 +17,7 @@
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 80px;
+	height: 60px;
 	background-color: #FFA0D0;
 	box-shadow: 0 5px 5px gray;
 }
@@ -59,7 +59,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 150px;
+	width: 100px;
 	height: 80px;
 }
 
@@ -72,15 +72,15 @@
 }
 
 .list_1{
-	width: 150px;
-	height: 60px;
+	width: 100px;
+	height: 40px;
 	border-radius: 10px;
 	background-color: #FFFFFF;
 }
 
 .list_2{
-	width: 60px;
-	height: 60px;
+	width: 40px;
+	height: 40px;
 	border-radius: 50%;
 	background-color: #FFFFFF;
 }
