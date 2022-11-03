@@ -14,13 +14,13 @@
 
 	h1 {
 		color: #ffffff;
-		font-size: 80px;
-	}
-	h2 {
 		font-size: 60px;
 	}
+	h2 {
+		font-size: 40px;
+	}
 	h3 {
-		font-size: 35px;
+		font-size: 25px;
 	}
 
 
@@ -42,7 +42,7 @@
 		height: 40px;
 		position: absolute;
 		top: 20px;
-		right: 20px;
+		right: 10px;
 		display: flex;
 		flex-wrap: wrap;
 		align-items: start;
@@ -69,10 +69,10 @@
 
 	#id_menu div {
 		width: 40px;
-		height: 30px;
+		height: 35px;
 		overflow: hidden;
 		position: absolute;
-		right: 20px;
+		right: 10px;
 		top: 20px;
 	}
 
@@ -101,7 +101,7 @@
 	#id_menu ul{
 		border-radius: 10px;
 		background: rgba(255,255,255,1);
-		width: 30%;
+		width: 50%;
 		position: absolute;
 		top: 80px;
 		right: 20px;
@@ -115,7 +115,7 @@
 		padding: 22px;
 		border-bottom: 3px rgba(200,200,200,1) solid;
 		color: gray;
-		font-size: 25px;
+		font-size: 16px;
 	}
 
 	#id_menu li:hover {
