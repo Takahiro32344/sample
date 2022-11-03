@@ -1,0 +1,103 @@
+﻿@charset "UTF-8";
+
+/* ここから書く */
+.contents {
+	width: 100%;
+}
+
+.contents_2 {
+	width: 100%;
+	height: 65px;
+	background-color: #DDDDDD;
+}
+
+
+.space {
+	width: 100%;
+	height: 30px;
+	background-color: #DDDDDD;
+}
+
+.space_2 {
+	width: 100%;
+	height: 50px;
+	background-color: #DDDDDD;
+}
+
+
+.box_1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 60px;
+	background-color: #A0CAFA;
+	box-shadow: 0 5px 5px gray;
+}
+
+.box_2 {
+	background-color: #DDDDDD;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 160px;
+}
+
+.box_3 {
+	width: 100%;
+	height: 100px;
+	background-color: #000000;
+}
+
+/*    リスト      */
+
+.list_contents_1 {
+	margin: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 60px;
+}
+
+.list_contents_2 {
+	display: flex;
+	flex: initial;
+	flex-wrap: nowrap;
+	justify-content: start;
+	width: 98%;
+	height: 130px;
+}
+
+.list_1{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #FFFFFF;
+}
+
+.list_2{
+	width: 150px;
+	height: 40px;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+}
+
+.list_3{
+	margin: 10px;
+	width: 60px;
+	height: 60px;
+	background-color: gray;
+	border-radius: 10%;
+}
+
+.list_4{
+	margin: 10px;
+	width: 96%;
+	height: 120px;
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px gray;
+}
+

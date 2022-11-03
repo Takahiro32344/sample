@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/* clearfix用 */
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ここから書く */
+.contents {
+	margin: 0 auto;
+	width: 400px;
+	height: 450;
+}
+
+.bgcolor1 {
+	width: 400px;
+	height: 100px;
+	background-color: #7281D3;
+}
+
+.bgcolor2 {
+	width: 150px;
+	height: 250px;
+	background-color: #FAA0A0;
+	float: left;
+}
+
+.bgcolor3 {
+	width: 250px;
+	height: 250px;
+	background-color: #A0CAFA;
+	float: right;
+}
+
+.bgcolor4 {
+	width: 400px;
+	height: 100px;
+	background-color: #D3AE72;
+}
+
+/*      リスト       */
+.contents_list1 {
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	width: 160px;
+	height: 60px;
+	padding: 5px;
+	background-color: #FFFFFF;
+}
+
+.contents_list1 li:first-child {
+	width: 40px;
+	height: 40px;
+	background-color: #FFC66A;
+	border: solid 5px #FFFFFF;
+	box-sizing: content-box;
+	float: left;
+}
+
+.list_1 {
+	width: 40px;
+	height: 40px;
+	background-color: #FFC66A;
+	border: solid 5px #FFFFFF;
+	box-sizing: content-box;
+	float: left;
+}
+
+.contents_list2 {
+	position: absolute;
+	top: 10.6%;
+	left: 47.4%;
+	width: 250px;
+	height: 250px;
+	padding: 40px;
+}
+
+.contents_list2 li:first-child {
+	margin-bottom: 10px;
+	width: 140px;
+	height: 40px;
+	background-color: #72CCD3;
+	border: solid 5px #FFFFFF;
+	box-sizing: content-box;
+}
+
+.list_2 {
+	margin-bottom: 10px;
+	width: 140px;
+	height: 40px;
+	background-color: #72CCD3;
+	border: solid 5px #FFFFFF;
+	box-sizing: content-box;
+}
+
+
