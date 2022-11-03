@@ -181,7 +181,7 @@
 
  	.w_content .a_para {
 		margin-left: 0%;
-		font-size: 30px;
+		font-size: 20px;
 		width: 90%;
 		height: 4%;
 		display: flex;
@@ -189,6 +189,7 @@
 		align-items: end;
 	}
 	.w_contents p {
+		font-size: 20px;
 		text-align: center;
 	}
 
