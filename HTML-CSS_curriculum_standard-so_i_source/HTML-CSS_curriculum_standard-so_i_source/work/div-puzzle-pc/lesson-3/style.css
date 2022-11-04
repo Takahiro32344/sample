@@ -72,7 +72,7 @@
 	float: left;
 }
 
-.list_1 {
+.item_1 {
 	width: 40px;
 	height: 40px;
 	background-color: #FFC66A;
@@ -99,7 +99,7 @@
 	box-sizing: content-box;
 }
 
-.list_2 {
+.item_2 {
 	margin-bottom: 10px;
 	width: 140px;
 	height: 40px;
