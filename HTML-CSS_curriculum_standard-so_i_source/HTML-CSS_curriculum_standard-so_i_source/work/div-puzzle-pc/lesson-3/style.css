@@ -2,39 +2,51 @@
 
 /* clearfix用 */
 .clearfix::after {
-  content: '';
-  display: block;
-  clear: both;
+	content: '';
+	display: block;
+	clear: both;
 }
 
 /* ここから書く */
-.contents {
+
+.top {
 	margin: 0 auto;
 	width: 400px;
-	height: 450;
+	height: 100px;
+}
+.middle {
+	margin: 0 auto;
+	width: 400px;
+	height: 250px;
 }
 
-.bgcolor1 {
+.bottom {
+	margin: 0 auto;
+	width: 400px;
+	height: 100px;
+}
+
+.box_1 {
 	width: 400px;
 	height: 100px;
 	background-color: #7281D3;
 }
 
-.bgcolor2 {
+.box_2 {
 	width: 150px;
 	height: 250px;
 	background-color: #FAA0A0;
 	float: left;
 }
 
-.bgcolor3 {
+.box_3 {
 	width: 250px;
 	height: 250px;
 	background-color: #A0CAFA;
 	float: right;
 }
 
-.bgcolor4 {
+.box_4 {
 	width: 400px;
 	height: 100px;
 	background-color: #D3AE72;
@@ -71,7 +83,7 @@
 
 .contents_list2 {
 	position: absolute;
-	top: 10.6%;
+	top: 9.5%;
 	left: 47.4%;
 	width: 250px;
 	height: 250px;
