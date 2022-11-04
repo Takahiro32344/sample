@@ -16,40 +16,40 @@
 	width: 400px;
 }
 
-.box_1 {
+.box-top {
 	width: 400px;
 	height: 100px;
 	background-color: #7281D3;
 }
 
-.box_2 {
+.box-middle-left {
 	width: 150px;
 	height: 250px;
 	background-color: #FAA0A0;
 	float: left;
 }
 
-.box_3 {
+.box-middle-right {
 	width: 100px;
 	height: 150px;
 	background-color: #DE94D9;
 	float: right;
 }
-.box_4 {
+.box-middle-middle-top {
 	width: 150px;
 	height: 50px;
 	background-color: #AEB3CE;
 	float: left;
 }
 
-.box_5 {
+.box-middle-middle-middle {
 	width: 150px;
 	height: 100px;
 	background-color: #72CCD3;
 	float: left;
 }
 
-.box_6 {
+.box-middle-middle-bottom {
 	width: 250px;
 	height: 100px;
 	background-color: #A0CAFA;
@@ -57,7 +57,7 @@
 }
 
 
-.box_7 {
+.box-bottom {
 	display: flex;
 	width: 400px;
 	height: 100px;
