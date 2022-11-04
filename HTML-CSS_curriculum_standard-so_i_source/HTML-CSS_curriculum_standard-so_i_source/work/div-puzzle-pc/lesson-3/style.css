@@ -26,27 +26,27 @@
 	height: 100px;
 }
 
-.box_1 {
+.box-top {
 	width: 400px;
 	height: 100px;
 	background-color: #7281D3;
 }
 
-.box_2 {
+.box-middle-left {
 	width: 150px;
 	height: 250px;
 	background-color: #FAA0A0;
 	float: left;
 }
 
-.box_3 {
+.box-middle-right {
 	width: 250px;
 	height: 250px;
 	background-color: #A0CAFA;
 	float: right;
 }
 
-.box_4 {
+.box-bottom {
 	width: 400px;
 	height: 100px;
 	background-color: #D3AE72;
