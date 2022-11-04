@@ -53,7 +53,7 @@
 }
 
 /*      リスト       */
-.contents_list1 {
+.list1 {
 	position: absolute;
 	top: 20px;
 	left: 50%;
@@ -63,7 +63,7 @@
 	background-color: #FFFFFF;
 }
 
-.contents_list1 li:first-child {
+.list1 li:first-child {
 	width: 40px;
 	height: 40px;
 	background-color: #FFC66A;
@@ -81,7 +81,7 @@
 	float: left;
 }
 
-.contents_list2 {
+.list2 {
 	position: absolute;
 	top: 9.5%;
 	left: 47.4%;
@@ -90,7 +90,7 @@
 	padding: 40px;
 }
 
-.contents_list2 li:first-child {
+.list2 li:first-child {
 	margin-bottom: 10px;
 	width: 140px;
 	height: 40px;
