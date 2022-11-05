@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 
 /* clearfix用 */
 .clearfix::after {
@@ -9,47 +9,37 @@
 
 /* ここから書く */
 
-.top {
+.wrapper {
 	margin: 0 auto;
+	width: 400px;
+	height: 400px;
+}
+
+.top {
+	background-color: #7281D3;
 	width: 400px;
 	height: 100px;
-}
-.middle {
-	margin: 0 auto;
-	width: 400px;
-	height: 250px;
 }
 
 .bottom {
-	margin: 0 auto;
 	width: 400px;
 	height: 100px;
+	background-color: #D3AE72;
 }
 
-.box-top {
-	width: 400px;
-	height: 100px;
-	background-color: #7281D3;
-}
 
-.box-middle-left {
+.middle-left {
 	width: 150px;
 	height: 250px;
 	background-color: #FAA0A0;
 	float: left;
 }
 
-.box-middle-right {
+.middle-right {
 	width: 250px;
 	height: 250px;
 	background-color: #A0CAFA;
 	float: right;
-}
-
-.box-bottom {
-	width: 400px;
-	height: 100px;
-	background-color: #D3AE72;
 }
 
 /*      リスト       */
