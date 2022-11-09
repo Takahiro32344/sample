@@ -685,6 +685,7 @@
 		display: flex;
 		justify-content: center;
 		margin-top: 200px;
+		width: 100%;
 	}
 
 	.blog_main {
@@ -694,7 +695,6 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-		margin-bottom: 200px;
 	}
 
 	.blog_main h3 {
@@ -779,6 +779,10 @@
 
 	.button:hover	 {
 		opacity: 0.7;
+	}
+
+	.margin_bottom {
+		margin-bottom: 200px;
 	}
 }
 
