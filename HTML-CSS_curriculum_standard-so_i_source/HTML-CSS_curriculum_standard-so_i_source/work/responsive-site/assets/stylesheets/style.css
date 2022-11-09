@@ -408,6 +408,10 @@
 		text-decoration: none;
 	}
 
+	.margin_bottom {
+		margin-bottom: 200px;
+	}
+
 	.button:hover {
 		opacity: 0.7;
 	}
