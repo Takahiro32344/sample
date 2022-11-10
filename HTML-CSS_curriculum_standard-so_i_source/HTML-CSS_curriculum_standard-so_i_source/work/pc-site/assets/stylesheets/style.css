@@ -169,11 +169,13 @@ p {
 }
 
 .scale1 {
+	display: flex;
+	align-items: start;
 	transform: scale(0.4);
 }
 
 .scale2 {
-	margin-left: -7px;
+	margin-left: -9px;
 	letter-spacing: 1px;
 	transform: scale(0.75);
 }
