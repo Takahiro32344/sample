@@ -57,7 +57,7 @@
 	margin: 60px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: start;
 	align-items: stretch;
 }
 
