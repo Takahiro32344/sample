@@ -169,5 +169,6 @@ p {
 
 small {
 	font-size: 10px;
+	transform:scale();
 }
 
