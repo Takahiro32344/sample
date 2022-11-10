@@ -3,9 +3,6 @@
 /* ここから書く */
 
 .contents {
-	position: fixed;
-	top: 0px;
-	left: 0px;
 	width: 100%;
 	height: 1050px;
 }
@@ -22,11 +19,14 @@ body {
 
 /*    ヘッダー    */
 .head_content {
-	width: 100%;
+	position: fixed;
+	top: 0px;
+	width: 990px;
 	height: 50px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	background-color: #FFFCFA;
 }
 
 .logo img {
@@ -52,7 +52,8 @@ body {
 /*    メイン    */
 .main_content {
 	width: 100%;
-	height: 85.9%;
+	height: 90.1%;
+	background-color: #FCF6F2;
 }
 
 h1 {
@@ -105,6 +106,7 @@ h2 {
 }
 
 .new_work img {
+	object-fit: cover;
 	margin-right: 10px;
 	margin-bottom: 8px;
 	width: 155px;
@@ -136,6 +138,7 @@ p {
 }
 
 .foot_content {
+	background-color: #FCF6F2;
 	width: 100%;
 	height: 104px;
 	display: flex;
