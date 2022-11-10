@@ -139,14 +139,6 @@ p {
 }
 
 /*    フッター    */
-.copyright_box p {
-	border: solid 1px #FFFFFF;
-	padding-left: 29px;
-	padding-right: 29px;
-	padding-top: 8px;
-	padding-bottom: 7px;
-}
-
 .foot_content {
 	position: absolute;
 	top: 975px;
@@ -167,7 +159,28 @@ p {
 	background-color: #7079E4;
 }
 
+.border {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 136px;
+	height: 36px;
+	border: solid 1px #FFFFFF;
+}
+
+.scale1 {
+	transform: scale(0.4);
+}
+
+.scale2 {
+	margin-left: -7px;
+	letter-spacing: 1px;
+	transform: scale(0.75);
+}
+
 small {
 	font-size: 10px;
 }
+
+
 
