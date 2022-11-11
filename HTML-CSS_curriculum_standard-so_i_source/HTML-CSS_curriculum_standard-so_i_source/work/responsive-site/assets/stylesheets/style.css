@@ -5,9 +5,11 @@
 	.contents {
 		position: relative;
 		width: 768px;
+		height: 1050px;
 	}
 	body {
 		width: 768px;
+		height: 1050px;
 	}
 
 	h1 {
