@@ -5,18 +5,18 @@
 	.contents {
 		position: relative;
 		width: 768px;
-		height: 1050px;
+		height: 100%;
 	}
 	body {
 		width: 768px;
-		height: 1050px;
+		height: 100%;
 	}
 
 	h1 {
 		letter-spacing: 1px;
 		width: 750px;
 		height: 100px;
-		top: 355px;
+		top: 345px;
 		left: 25px;
 		position: absolute;
 		color: #ffffff;
@@ -31,13 +31,6 @@
 
 
 	/*   ホーム    */
-	table {
-		position: absolute;
-		top: 0px;
-		left: 0px;
-		width: 768px;
-		height: 1050px;
-	}
 
 	.home_content_wrapper {
 		display: flex;
@@ -47,7 +40,7 @@
 	}
 
 	.home_background {
-		width: 100%;
+		width: 768px;
 		height: 100%;
 		object-fit: cover;
 		object-position: 0% 0%;
@@ -181,9 +174,6 @@
 	
 	/* ABOUT */
 	.about_content_wrapper {
-		position: absolute;
-		top: 1050px;
-		left: 0px;
 		width: 768px;
 		height: 2500px;
 	}
@@ -286,9 +276,6 @@
 	}
 
 	.work_content_wrapper {
-		position: absolute;
-		top: 3700px;
-		left: 0px;
 		display: flex;
 		width: 768px;
 		height: 4000px;
@@ -341,9 +328,6 @@
 	}
 
 	.blog_content_wrapper {
-		position: absolute;
-		top: 7550px;
-		left: 0px;
 		margin-top: 210px;
 		width: 768px;
 	}
@@ -451,10 +435,6 @@
   /* PC style */
 	br {
 		display: none;
-	}
-	table {
-		width: 1903px;
-		height: 100%;
 	}
 
 	.contents {
