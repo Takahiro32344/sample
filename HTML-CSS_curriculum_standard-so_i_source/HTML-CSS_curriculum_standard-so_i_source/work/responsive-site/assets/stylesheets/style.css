@@ -72,7 +72,7 @@
 		height: 60px;
 		position: absolute;
 		top: 23px;
-		left: 657px;
+		left: 680px;
 		display: flex;
 		flex-wrap: wrap;
 		align-items: start;
@@ -103,7 +103,7 @@
 		overflow: hidden;
 		position: absolute;
 		top: 23px;
-		left: 657px;
+		left: 680px;
 	}
 
 	#id_menu .menuopen{
