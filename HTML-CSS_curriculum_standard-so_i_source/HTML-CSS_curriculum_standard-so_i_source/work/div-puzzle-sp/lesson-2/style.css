@@ -20,7 +20,7 @@
 .middle {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: start;
 	align-items: center;
 	width: 100%;
 	background-color: #F5F5F5;
@@ -54,7 +54,9 @@
 }
 
 .middle-list {
-	margin: 60px;
+	margin-left: 42px;
+	margin-top: 70px;
+	margin-bottom: 52px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: start;
@@ -77,10 +79,11 @@
 }
 
 .middle-item{
-	margin: 10px;
-	padding: 110px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	padding: 101px;
 	background-color: #FFFFFF;
-	border-radius: 10px;
-	box-shadow: 3px 3px 3px #D6D6D6;
+	border-radius: 8px;
+	box-shadow: 4px 4px 4px #D6D6D6;
 }
 
