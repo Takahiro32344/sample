@@ -736,8 +736,6 @@
 	/*    ブログ    */
 
 	.blog_content_wrapper {
-		display: flex;
-		justify-content: center;
 		margin-top: 200px;
 		width: 1903px;
 	}
