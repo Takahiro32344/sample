@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS curriculum 3-2</title>
+</head>
+<body>
+
+  <script>
+    // ここから記述してください
+	let fruit = [
+		{
+			"name": "apple",
+			"price": 250,
+			"tax": 0.1
+		}
+	]
+
+	let apple_price;
+
+	function alert1() {
+		alert("アラート「OK」");
+	}
+	function alert2(name) {
+		alert(name);
+	}
+	function alert3(num1, num2, num3) {
+		alert(num1 + num2 + num3);
+	}
+
+	function payment_price(price, tax) {
+		return (price + (price * tax));
+	}
+
+	alert1();
+	alert2('沼部剛大');
+	alert3(5, 8, 10);
+
+	apple_price = payment_price(fruit[0].price,fruit[0].tax);
+	console.log( fruit[0].name + 'の税込価格は' + apple_price + '円です。');
+ </script>
+</body>
+</html>

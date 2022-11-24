@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS curriculum 2-5</title>
+</head>
+<body>
+
+  <script>
+    // ここから記述してください
+	let fruit = [
+		{
+			"name": "りんご",
+			"price": 200
+		},
+		{
+			"name": "ぶどう",
+			"price": 250
+		},
+		{
+			"name": "いちご",
+			"price": 300
+		}
+	]
+
+	console.log(fruit[0].name + 'の金額は' + fruit[0].price + '円です。');
+	console.log(fruit[1].name + 'の金額は' + fruit[1].price + '円です。');
+	console.log(fruit[2].name + 'の金額は' + fruit[2].price + '円です。');
+	console.log(fruit[0].name + 'と' + fruit[1].name + 'と' + fruit[2].name + 'の合計金額は' +
+			   (fruit[0].price + fruit[1].price + fruit[2].price) + '円です。');
+
+	if ((fruit[2].price > fruit[0].price) && (fruit[2].price > fruit[1].price)){
+		console.log(fruit[2].name + 'は' + fruit[1].name + 'と' + fruit[0].name + 'より高額です。');
+	}
+  </script>
+</body>
+</html>
