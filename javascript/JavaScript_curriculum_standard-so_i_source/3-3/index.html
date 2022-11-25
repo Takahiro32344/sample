@@ -4,34 +4,40 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>JS curriculum 2-7</title>
+	<title>JS curriculum 3-3</title>
 </head>
 <body>
-
+	<input type="Button" id="helloalert" value="アラート">
+	<h2>チャレンジ課題</h2>
+	<input type="text" id="textbox">
+	<input type="Button" id="id_run" value="実行">
+	<div id="input_resoult">ここに実行結果を表示させてね！</div>
+	<h1 id="id_date">今日の日付を取得しよう<h1>
+	<input type="Button" id="id_date_button" value="今日の日付">
 	<script>
 		// ここから記述してください
-		let data = [
-			{ "subject": "国語",
-				"scoer": 80
-			},
-			{ "subject": "数学",
-				"scoer": 70
-			},
-			{ "subject": "理科",
-				"scoer": 85
-			},
-			{ "subject": "英語",
-				"scoer": 90
-			}
-		]
+		function helloalert(){
+			alert('Hello!');
+		}
+		document.getElementById('helloalert').addEventListener('click', helloalert);
 
-		for (let i = 0; i <= 100; i++)
-			if (i % 2 == 0 && i != 0)
-				console.log(i);
 
-		data.forEach(function(value){
-			console.log(value.subject + 'は' + value.scoer + '点でした。');
-		});
+		function input(){
+			document.getElementById('input_resoult').textContent = document.getElementById('textbox').value;
+		}
+		document.getElementById('id_run').addEventListener('click', input);
+
+		var date = new Date();
+
+		function hover() {
+			document.getElementById('id_date').textContent = date.getFullYear() + '年' + date.getMonth() + '月' + date.getDate() + '日' ;
+		}
+
+		function mouseout() {
+			document.getElementById('id_date').textContent = '今日の日付を取得しよう';
+		}
+		document.getElementById('id_date_button').addEventListener('mouseover', hover);
+		document.getElementById('id_date_button').addEventListener('mouseout', mouseout);
 	</script>
 </body>
 </html>
