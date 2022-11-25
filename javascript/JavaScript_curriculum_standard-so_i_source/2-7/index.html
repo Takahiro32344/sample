@@ -1,37 +1,37 @@
 ﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JS curriculum 2-7</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS curriculum 2-7</title>
 </head>
 <body>
 
-  <script>
-	// ここから記述してください
-	let data = [
-		{ "subject": "国語",
-			"scoer": 80
-		},
-		{ "subject": "数学",
-			"scoer": 70
-		},
-		{ "subject": "理科",
-			"scoer": 85
-		},
-		{ "subject": "英語",
-			"scoer": 90
-		}
-	]
+	<script>
+		// ここから記述してください
+		let data = [
+			{ "subject": "国語",
+				"scoer": 80
+			},
+			{ "subject": "数学",
+				"scoer": 70
+			},
+			{ "subject": "理科",
+				"scoer": 85
+			},
+			{ "subject": "英語",
+				"scoer": 90
+			}
+		]
 
-	for (let i = 0; i <= 100; i++)
-		if (i % 2 == 0 && i != 0)
-			console.log(i);
+		for (let i = 0; i <= 100; i++)
+			if (i % 2 == 0 && i != 0)
+				console.log(i);
 
-	data.forEach(function(value){
-		console.log(value.subject + 'は' + value.scoer + '点でした。');
-	});
-  </script>
+		data.forEach(function(value){
+			console.log(value.subject + 'は' + value.scoer + '点でした。');
+		});
+	</script>
 </body>
 </html>
