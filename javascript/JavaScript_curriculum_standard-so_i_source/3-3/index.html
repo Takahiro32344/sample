@@ -4,40 +4,41 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>JS curriculum 3-3</title>
+<title>JS curriculum 3-3</title>
 </head>
 <body>
-	<input type="Button" id="helloalert" value="アラート">
+<input type="Button" id="helloalert" value="アラート">
 	<h2>チャレンジ課題</h2>
-	<input type="text" id="textbox">
-	<input type="Button" id="id_run" value="実行">
+   	<input type="text" id="textbox">
+   	<input type="Button" id="id_run" value="実行">
 	<div id="input_resoult">ここに実行結果を表示させてね！</div>
-	<h1 id="id_date">今日の日付を取得しよう<h1>
-	<input type="Button" id="id_date_button" value="今日の日付">
+	<h1>今日の日付を取得しよう</h1>
+   	<input type="Button" id="id_date_button" value="今日の日付">
+	<p id="id_date">ボタンにマウスカーソルが重なったらこの文章部分が今日の日付に変わるようにして、離れたら元の表示に戻してね！</p>
 	<script>
-		// ここから記述してください
-		function helloalert(){
-			alert('Hello!');
-		}
-		document.getElementById('helloalert').addEventListener('click', helloalert);
+	 // ここから記述してください
+	function helloalert(){
+		alert('Hello!');
+	}
+	document.getElementById('helloalert').addEventListener('click', helloalert);
 
 
-		function input(){
-			document.getElementById('input_resoult').textContent = document.getElementById('textbox').value;
-		}
-		document.getElementById('id_run').addEventListener('click', input);
+	function input(){
+		document.getElementById('input_resoult').textContent = document.getElementById('textbox').value;
+	}
+	document.getElementById('id_run').addEventListener('click', input);
 
-		var date = new Date();
+	var date = new Date();
 
-		function hover() {
-			document.getElementById('id_date').textContent = date.getFullYear() + '年' + date.getMonth() + '月' + date.getDate() + '日' ;
-		}
+	function hover() {
+		document.getElementById('id_date').textContent = date.getFullYear() + '年' + date.getMonth() + '月' + date.getDate() + '日' ;
+	}
 
-		function mouseout() {
-			document.getElementById('id_date').textContent = '今日の日付を取得しよう';
-		}
-		document.getElementById('id_date_button').addEventListener('mouseover', hover);
-		document.getElementById('id_date_button').addEventListener('mouseout', mouseout);
-	</script>
+	function mouseout() {
+		document.getElementById('id_date').textContent = 'ボタンにマウスカーソルが重なったらこの文章部分が今日の日付に変わるようにして、離れたら元の表示に戻してね！';
+	}
+	document.getElementById('id_date_button').addEventListener('mouseover', hover);
+	document.getElementById('id_date_button').addEventListener('mouseout', mouseout);
+  </script>
 </body>
 </html>
