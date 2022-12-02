@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title></title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+    <ul class="nav">
+        <li>HOME</li>
+        <li>NEWS</li>
+        <li>MYPAGE</li>
+    </ul>
+    <ul class="contents">
+        <li>The pain itself is a lot of pain, but it is the main reason for the pain and vitality, so that the labor and sorrow, some important things to do of this kind.</li>
+        <li class="is-hidden">
+            Over the years, I will come, who will our objectives out of her the advantage of exercise, so that stimulus efforts if the school district and longevity. Want to be a pain in the cupadat cillum has been criticized in the Duis et dolore magna flee produces no resultant pleasure?.</li>
+        <li class="is-hidden">
+            Excepteur desires blacks are not excepteur, is soothing to the soul, that is, they are my toil, they deserted the general is to blame that services should be.</li>
+    </ul>
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+// 今回やるのはタブメニューです。
+// navの小要素であるliをクリックして、contents内の小要素であるli要素を表示させる。
+// .index() 要素のindexを取得します。
+// .eq() 引数に応じたindexの要素を指定します。
+// .addClass() クラスを追加します。
+// .removeClass() クラスを削除します。
+$(function(){
+    $(".nav li").on("click", function(){
+        var index = $(".nav li").index(this);
+        switch (index) {
+            case 0:
+                $(".contents li").eq(index).removeClass("is-hidden");
+                $(".contents li").eq(index + 1).addClass("is-hidden");
+                $(".contents li").eq(index + 2).addClass("is-hidden");
+                break;
+            case 1:
+                $(".contents li").eq(index - 1).addClass("is-hidden");
+                $(".contents li").eq(index).removeClass("is-hidden");
+                $(".contents li").eq(index + 1).addClass("is-hidden");
+                break;
+            case 2:
+                $(".contents li").eq(index - 2).addClass("is-hidden");
+                $(".contents li").eq(index - 1).addClass("is-hidden");
+                $(".contents li").eq(index).removeClass("is-hidden");
+                break;
+        }
+    });
+});
+</script>
+</body>
+</html>
