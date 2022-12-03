@@ -48,7 +48,7 @@ $(function() {
 // 第2問　id="q2"の要素をクリックしたら背景色をピンクにせよ。
 $(function() {
     $("#q2").on("click", function() {
-        $("#q2").css("color","PINK");
+        $("#q2").css("background-color","PINK");
     });
 });
 
@@ -88,8 +88,8 @@ $(function() {
 // 第7問　id="q7"の子要素をクリックしたら、その要素のインデックス（何番目か）をconsole.log()とalert()を用いて表示させよ。
 $(function() {
     $("#q7 li").on("click", function() {
-        alert($("#q7 li").index(this));
-        console.log($("#q7 li").index(this));
+        alert($("#q7 li").index(this) + 1);
+        console.log($("#q7 li").index(this) + 1);
     });
 });
 
