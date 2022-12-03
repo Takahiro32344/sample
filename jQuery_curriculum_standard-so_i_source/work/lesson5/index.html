@@ -28,7 +28,7 @@
 // .hover() マウスが乗った、外れた時のタイミングを取ります。
 // .stop() アニメーションを止めます。引数次第で止め方が変わります。ググりましょう。
 $(function(){
-  var stop = false;
+  var stop = true;
   $(".tooltip-body").hover(function(){
     $(".tooltip-body").after("<div class='tooltip' style='display: none;'>description</div>");
     if (stop != false){
