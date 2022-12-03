@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title></title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="tooltip-body">The pain itself is love, the main storage system.
+  Of the accused, was born and in the same betake himself hated by the blandishments of the least of these is fleeing, for he's liable to the advantage of, it is easy to love, no one is to pay one proceeding from a to do at another time.</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+// 今回やるのはツールチップです。
+// .tooltip-bodyにマウスが乗ったら、
+// <div class='tooltip' style='display: none;'>description</div>
+// がfadeInし、マウスが外れたらfadeOutする。
+// その際に.tooltipがマウスに追尾する。
+// x座標、y座標の取得方法。
+// function(e) {
+//     var x = e.pageX,
+//         y = e.pageY;
+// }
+// mousemove マウスが移動している状態を取ります。
+// .hover() マウスが乗った、外れた時のタイミングを取ります。
+// .stop() アニメーションを止めます。引数次第で止め方が変わります。ググりましょう。
+$(function(){
+  $(".tooltip-body").hover(function(){
+    $(".tooltip-body").after("<div class='tooltip' style='display: none;'>description</div>");
+    $(".tooltip").fadeIn(2000);
+  });
+
+  $(".tooltip-body").mouseout(function() {
+    $(".tooltip").fadeIn(2000).stop(true,false);
+    $(".tooltip").fadeOut(2000);
+  });
+}).on("mousemove", function(e){
+  var x = e.pageX,
+      y = e.pageY;
+    $(".tooltip").css("top", y).css("left", x);
+});
+</script>
+</body>
+</html>
