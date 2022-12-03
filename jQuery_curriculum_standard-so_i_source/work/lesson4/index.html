@@ -33,8 +33,10 @@
 // .addClass() クラスを追加します。
 // .removeClass() クラスを削除します。
 $(function(){
+    $(".contents").addClass("is-hidden");
     $(".nav li").on("click", function(){
         var index = $(".nav li").index(this);
+        $(".contents").removeClass("is-hidden");
         switch (index) {
             case 0:
                 $(".contents li").eq(index).removeClass("is-hidden");
