@@ -33,28 +33,26 @@
 // .addClass() クラスを追加します。
 // .removeClass() クラスを削除します。
 $(function(){
-    $(".contents").addClass("is-hidden");
-    $(".nav li").on("click", function(){
+    $(".nav li").on("click", function() {
         var index = $(".nav li").index(this);
-        $(".contents").removeClass("is-hidden");
-        switch (index) {
+        switch (index){
             case 0:
-                $(".contents li").eq(index).removeClass("is-hidden");
-                $(".contents li").eq(index + 1).addClass("is-hidden");
-                $(".contents li").eq(index + 2).addClass("is-hidden");
+                tubChange(index,index + 1,index + 2);
                 break;
             case 1:
-                $(".contents li").eq(index - 1).addClass("is-hidden");
-                $(".contents li").eq(index).removeClass("is-hidden");
-                $(".contents li").eq(index + 1).addClass("is-hidden");
+                tubChange(index,index - 1,index + 1);
                 break;
             case 2:
-                $(".contents li").eq(index - 2).addClass("is-hidden");
-                $(".contents li").eq(index - 1).addClass("is-hidden");
-                $(".contents li").eq(index).removeClass("is-hidden");
+                tubChange(index,index - 1,index - 2);
                 break;
         }
     });
+
+    function tubChange(index1,index2,index3) {
+        $(".contents li").eq(index1).removeClass("is-hidden");
+        $(".contents li").eq(index2).addClass("is-hidden");
+        $(".contents li").eq(index3).addClass("is-hidden");
+    };
 });
 </script>
 </body>
