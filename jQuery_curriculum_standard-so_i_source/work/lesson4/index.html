@@ -33,26 +33,10 @@
 // .addClass() クラスを追加します。
 // .removeClass() クラスを削除します。
 $(function(){
-    $(".nav li").on("click", function() {
+    $(".nav li").click(function (){
         var index = $(".nav li").index(this);
-        switch (index){
-            case 0:
-                tubChange(index,index + 1,index + 2);
-                break;
-            case 1:
-                tubChange(index,index - 1,index + 1);
-                break;
-            case 2:
-                tubChange(index,index - 1,index - 2);
-                break;
-        }
+        $(".contents li").addClass("is-hidden").eq(index).removeClass("is-hidden");
     });
-
-    function tubChange(index1,index2,index3) {
-        $(".contents li").eq(index1).removeClass("is-hidden");
-        $(".contents li").eq(index2).addClass("is-hidden");
-        $(".contents li").eq(index3).addClass("is-hidden");
-    };
 });
 </script>
 </body>
