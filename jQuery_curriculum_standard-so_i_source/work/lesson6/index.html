@@ -20,17 +20,14 @@
 // .replace(/\s+/g,'').length 改行を含まない文字数を取得します。
 // .val() input要素のvalueを取得します。
 $(function() {
-    $(".input").val("").on("input", function(){
+    $(".input").val("").keyup(function(){
         let limit_length = 30;
         $(".lest-count").text(limit_length -= $(this).val().length);
-        if (limit_length >= 0)
+        if (limit_length >= 0){
             $(".lest-count").removeClass("red");
-        else
-            $(".lest-count").addClass("red").text(limit_length * -1);
-
-        if (limit_length * -1 == 10){
+        }else{
+            $(".lest-count").addClass("red").text(limit_length);
             var txt = $(this).val();
-            $(this).before('<div style="background-color: #B1F9D0; font-size: 13px; line-height: 20px;">' + $(this).val() + '</div>').val("");
             $(".lest-count").text(txt.replace(/\s+/g,'').length);
         }
     });
