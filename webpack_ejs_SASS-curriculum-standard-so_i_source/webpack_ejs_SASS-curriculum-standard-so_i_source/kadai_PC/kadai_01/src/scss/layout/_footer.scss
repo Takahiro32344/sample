@@ -1,0 +1,34 @@
+.footer {
+	small {
+		font-size: 0.55vw;
+	}
+	margin-top: 5vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	background-color: #669ACD;
+	width: 10.8vw;
+	height: 4.7vw;
+}
+.small {
+	transform: scale(0.7);
+}
+.letter-space {
+	letter-spacing: 0.02vw;
+}
+.size {
+	font-size: 0.8vw;
+}
+.underline {
+	text-decoration: underline;
+}
+
+.border {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 9.9vw;
+	height: 3.8vw;
+	border: solid 0.1vw white;
+}
