@@ -1,118 +1,117 @@
 .head {
-          background: url(../../../img/bg.jpg);
-          background-size: 6.36vw 1.5vw;
-          margin-top: -0.5vw;
-          width: 99vw;
-          height: 1.4vw;
+    background: url(../../../img/bg.jpg);
+    background-size: 6.36vw 1.5vw;
+    margin-top: -0.5vw;
+    width: 99vw;
+    height: 1.4vw;
 }
 
 .main-head {
-          width: 57vw;
-          height: 12vw;
-          display: flex;
-          justify-content:  space-between;
-          align-items: center;
+    width: 57vw;
+    height: 12vw;
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
 }
 
 .logo {
-          width: 8vw;
-          height: 5vw;
-          background: url(../../../img/logo.png);
-          background-size: 100% 100%;
-          background-repeat:  no-repeat;
+    width: 8vw;
+    height: 5vw;
+    background: url(../../../img/logo.png);
+    background-size: 100% 100%;
+    background-repeat:  no-repeat;
 }
 .menu {
-          width: 24.5vw;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          color: #686868;
-          font-size: 1.2vw;
+    width: 24.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #686868;
+    font-size: 1.2vw;
 }
 
 h1 {
-          margin-top: 1.3vw;
-          margin-bottom: 1.1vw;
-          font-size: 1.5vw;
-          color: #686868;
+    margin-top: 1.3vw;
+    margin-bottom: 1.1vw;
+    font-size: 1.5vw;
+    color: #686868;
 }
 .main-img-1 {
-          box-shadow: 0vw 1.7vw 0.7vw -1.1vw #AAA9A1;
-          border: solid 0.2vw white;
-          width: 57vw;
-          height: 30vw;
-          content: url(../../../img/hero.png);
+    box-shadow: 0vw 1.7vw 0.7vw -1.1vw #AAA9A1;
+    border: solid 0.2vw white;
+    width: 57vw;
+    height: 30vw;
+    content: url(../../../img/hero.png);
 }
 
 .ownself-wrapper {
-          h2 {
-                    margin-bottom: 1vw;
-                    padding-left: 0.5vw;
-                    width: 7vw;
-                    height: 2vw;
-                    border-left: solid 0.4vw #DD7695;
-                    font-size: 1.2vw;
-          }
-          margin-top: 3.5vw;
-          height: 21vw;
-          display: flex;
-          justify-content: center;
+    h2 {
+        margin-bottom: 1vw;
+        width: 7.5vw;
+        height: 2vw;
+        border-left: solid 0.4vw #DD7695;
+        font-size: 1.2vw;
+    }
+    margin-top: 3.5vw;
+    height: 21vw;
+    display: flex;
+    justify-content: center;
 }
 
 .new-photo {
-          img {
-                    border: solid 0.2vw white;
-                    margin-right: 1.5vw;
-                    margin-bottom: 1.6vw;
-                    width: 12.8vw;
-                    height: 8.6vw;
-                    object-fit: cover;
-          }
-          width: 43vw;
-          height: 21.5vw;
-          display: flex;
-          flex-wrap: wrap;
+    img {
+        border: solid 0.2vw white;
+        margin-right: 1.5vw;
+        margin-bottom: 1.6vw;
+        width: 12.8vw;
+        height: 8.6vw;
+        object-fit: cover;
+    }
+    width: 43vw;
+    height: 21.5vw;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .ownself {
-          text-align: left;
-          font-size: 0.9vw;
-          width: 14vw;
-          height: 21vw;
-          color: #686868;
-          h2 {
-                    padding-left: 0.5vw;
-          }
-          a {
-                    text-decoration: underline;
-                    color: #669acd;
-          }
-          section {
-                    margin-top: 0.6vw;
-          }
+    text-align: left;
+    font-size: 0.9vw;
+    width: 14vw;
+    height: 21vw;
+    color: #686868;
+    h2 {
+        padding-left: 0.5vw;
+    }
+    a {
+        text-decoration: underline;
+        color: #669acd;
+    }
+    section {
+        margin-top: 0.6vw;
+    }
 }
 
 .new-photo-1 {
-          content: url(../../../img/thumb1.jpg);
+    content: url(../../../img/thumb1.jpg);
 }
 
 .new-photo-2 {
-          content: url(../../../img/thumb2.jpg);
+    content: url(../../../img/thumb2.jpg);
 }
 
 .new-photo-3 {
-          content: url(../../../img/thumb3.jpg);
+    content: url(../../../img/thumb3.jpg);
 }
 
 .new-photo-4 {
-          content: url(../../../img/thumb4.jpg);
+    content: url(../../../img/thumb4.jpg);
 }
 
 .new-photo-5 {
-          content: url(../../../img/thumb5.jpg);
+    content: url(../../../img/thumb5.jpg);
 }
 
 .new-photo-6 {
-          content: url(../../../img/thumb6.jpg);
+    content: url(../../../img/thumb6.jpg);
 }
 
