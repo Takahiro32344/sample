@@ -1,0 +1,15 @@
+// @use "var" as v;
+
+$bgPath: '../../assets/images/';
+
+.p-home-bg {
+  display: block;
+  height: 300px;
+  background-color: red;
+  background-image: url('#{$bgPath}sea.jpg');
+  background-size: cover;
+}
+
+.p-home-grid {
+  display: flex;
+}

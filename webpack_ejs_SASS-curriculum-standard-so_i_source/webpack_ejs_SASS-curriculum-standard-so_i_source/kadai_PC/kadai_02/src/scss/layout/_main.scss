@@ -1,0 +1,294 @@
+.main-head-wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5vw;
+    width: 70vw;
+    height: 17vw;
+}
+
+.main-head-left-wrapper {
+    background-color: #058500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17vw;
+    height: 17vw;
+}
+.main-head-left {
+    content: url(../../../img/logo/logo1.png);
+    padding: 3vw;
+    border: solid 0.05vw white;
+    width: 16.8vw;
+    height: 16.8vw;
+}
+
+.main-head-right {
+    content: url(../../../img/logo/top.png);
+    width: 52.2vw;
+    height: 17vw;
+}
+
+.main-middle-wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.8vw;
+    width: 70vw;
+}
+
+.side-menu-wrapper {
+    position: relative;
+}
+
+$left: 0.1vw;
+$top: 0.1vw;
+@for $i from 1 through 4 {
+    @if $i == 2 {
+        $top: 21.8vw;
+    }
+    @if $i == 4 {
+        $left: 16.8vw;
+    }
+    @if $i <= 2 {
+        .border-solid#{$i} {
+            position: absolute;
+            top: $top;
+            left: 0.1vw;
+            border-top: solid 0.1vw white;
+            width: 16.75vw;
+            height: 0.1vw;
+        }
+    }@else {
+        .border-solid#{$i} {
+            position: absolute;
+            top: 0.1vw;
+            left: $left;
+            border-left: solid 0.1vw white;
+            width: 0.1vw;
+            height: 21.8vw;
+        }
+    }
+}
+
+$left: 5.7vw;
+$top: 5.5vw;
+@for $i from 1 through 5 {
+    @if $i <= 2 {
+        .border-dash#{$i} {
+            position: absolute;
+            top: 0.1vw;
+            left: $left * $i;
+            width: 0.05vw;
+            height: 21.8vw;
+            border-left: dashed 0.1vw white;
+        }
+    }@else {
+        .border-dash#{$i} {
+            position: absolute;
+            top: $top * ($i - 2);
+            left: 0.1vw;
+            width: 16.7vw;
+            height: 0.05vw;
+            border-top: dashed 0.1vw white;
+        }
+    }
+}
+
+.side-menu-1 {
+    img {
+        width: 2.2vw;
+        height: 2.2vw;
+    }
+    text-align: center;
+    width: 17vw;
+    height: 22vw;
+    background-color: #058500;
+}
+
+.side-menu-2 {
+    margin-top: 1.3vw;
+    width: 17vw;
+    display: flex;
+    justify-content: center;
+    img {
+        margin: 0.6vw;
+        width: 2.2vw;
+        height: 2.2vw;
+    }
+}
+
+$number: 1;
+@for $i from 1 through 12 {
+    .main-middle-left-img#{$i} {
+        @if $i <= 5 {
+            content: url(../../../img/sidemenu/icon/spr_gnav_pc_0#{$number}.png);
+        }@else{
+            content: url(../../../img/sidemenu/icon/spr_gnav_pc_#{$number}.png);
+        }
+    }
+    $number: $number + 2;
+}
+
+.main-middle-left-img13 {
+    content: url(../../../img/icon/facebook.png);
+}
+
+.main-middle-left-img14 {
+    content: url(../../../img/icon/twitter.png);
+}
+
+
+.box-size2 {
+    text-align: left;
+    border: solid 0.1vw #989897;
+    width: 16.9vw;
+    height: 16.7vw;
+}
+
+.main-menu-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: start;
+    width: 52.2vw;
+    span {
+        img {
+            margin-top: 1vw;
+            margin-bottom: 1vw;
+        }
+        display: flex;
+        justify-content: center;
+    }
+    div {
+        margin-bottom: 0.8vw;
+    }
+    div > div{
+        img {
+            margin-top: 1vw;
+        }
+    }
+    div > div > div {
+        margin-top: 0.8vw;
+        margin-bottom: 0.8vw;
+        text-align: center;
+    }
+    p {
+        margin-top: 1vw;
+        text-align: left;
+        font-size: 1vw;
+    }
+}
+
+$number: 1;
+$number2: 46;
+$number3: 16;
+@for $i from 1 through 12 {
+    @if $i == 2 {
+        $number: 4;
+        .main-menu-top-img#{$i} {
+            width: 3.3vw;
+        }
+    }@else if $i == 3 {
+        .main-menu-top-img#{$i} {
+            width: 3.3vw;
+        }
+    }@else {
+        .main-menu-top-img#{$i} {
+            width: 5vw;
+        }
+    }
+    @if $i == 10 or $i == 12 {
+        $number2: $number2 - 1;
+    }
+
+    @if $i < 5 {
+        .main-menu-top-img#{$i} {
+            margin-left: -0.05vw;
+            height: 1.1vw;
+            content: url(../../../img/mainmenu/menu/spr_top01_0#{$number}.png);
+        }
+    }@else{
+        .main-menu-top-img#{$i} {
+            margin-left: -0.05vw;
+            height: 1.1vw;
+            content: url(../../../img/mainmenu/menu/spr_top01_#{$number}.png);
+        }
+    }
+    @if $i < 7 {
+        $number: $number + 2;
+    }
+    .main-menu-middle-img#{$i} {
+        width: 3.5vw;
+        height: 3.5vw;
+        content: url(../../../img/mainmenu/icon/spr_top01_#{$number2}.png);
+    }
+    $number2: $number2 + 2;
+
+    .main-menu-bottom-img#{$i} {
+        height: 1.1vw;
+        content: url(../../../img/mainmenu/menu2/spr_top01_#{$number3}.png);
+    }
+    @if $i == 1 or $i == 4 or $i == 6 or $i >= 10 {
+        $number3: $number3 + 3;
+    }@else {
+        $number3: $number3 + 2;
+    }
+}
+
+@for $i from 1 through 12 {
+    @if $i == 1 or $i == 3 or $i == 4 {
+        .main-menu-bottom-img#{$i} {
+            width: 4.5vw;
+        }
+    }@else {
+        .main-menu-bottom-img#{$i} {
+            width: 7vw;
+        }
+    }
+}
+.main-bottom-menu-wrapper {
+    font-size: 0.8vw;
+    display: flex;
+    justify-content: center;
+    ul {
+        margin-top: 0.9vw;
+        width: 67vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    margin-top: 5vw;
+    border-top: solid 0.15vw #058500;
+    border-bottom: dotted 0.15vw #058500;
+    width: 100vw;
+    height: 3vw;
+}
+
+.main-bottom-menu-img {
+    margin-top: -0.15vw;
+    margin-right: 0.2vw;
+    width: 1vw;
+    height: 1vw;
+    content: url(../../../img/li_icon.png);
+}
+
+.main-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 5vw;
+}
+.company-logo {
+    margin-left: 16.3vw;
+    width: 19.5vw;
+    height: 2vw;
+    content: url(../../../img/logo/logo2.png);
+}
+.privacy-mark{
+    margin-right: 13.7vw;
+    width: 3.5vw;
+    height: 3.5vw;
+    content: url(../../../img/icon/privacy.png);
+}
