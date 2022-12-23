@@ -42,60 +42,6 @@
     position: relative;
 }
 
-$left: 0.1vw;
-$top: 0.1vw;
-@for $i from 1 through 4 {
-    @if $i == 2 {
-        $top: 21.8vw;
-    }
-    @if $i == 4 {
-        $left: 16.8vw;
-    }
-    @if $i <= 2 {
-        .border-solid#{$i} {
-            position: absolute;
-            top: $top;
-            left: 0.1vw;
-            border-top: solid 0.1vw white;
-            width: 16.75vw;
-            height: 0.1vw;
-        }
-    }@else {
-        .border-solid#{$i} {
-            position: absolute;
-            top: 0.1vw;
-            left: $left;
-            border-left: solid 0.1vw white;
-            width: 0.1vw;
-            height: 21.8vw;
-        }
-    }
-}
-
-$left: 5.7vw;
-$top: 5.5vw;
-@for $i from 1 through 5 {
-    @if $i <= 2 {
-        .border-dash#{$i} {
-            position: absolute;
-            top: 0.1vw;
-            left: $left * $i;
-            width: 0.05vw;
-            height: 21.8vw;
-            border-left: dashed 0.1vw white;
-        }
-    }@else {
-        .border-dash#{$i} {
-            position: absolute;
-            top: $top * ($i - 2);
-            left: 0.1vw;
-            width: 16.7vw;
-            height: 0.05vw;
-            border-top: dashed 0.1vw white;
-        }
-    }
-}
-
 .side-menu-1 {
     img {
         width: 2.2vw;
@@ -121,7 +67,7 @@ $top: 5.5vw;
 
 $number: 1;
 @for $i from 1 through 12 {
-    .main-middle-left-img#{$i} {
+    #main-middle-left-img#{$i} {
         @if $i <= 5 {
             content: url(../../../img/sidemenu/icon/spr_gnav_pc_0#{$number}.png);
         }@else{

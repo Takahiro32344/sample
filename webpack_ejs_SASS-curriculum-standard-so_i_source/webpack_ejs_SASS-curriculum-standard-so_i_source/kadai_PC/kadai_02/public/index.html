@@ -23,7 +23,7 @@
 <meta name="twitter:image" content="" /><!--絶対パスで記述-->
 
 <title>TOP</title>
-<link href="assets/stylesheets/bundle55a774eb7cc9c92fbbed.css" rel="stylesheet"></head>
+<link href="assets/stylesheets/bundlea9e6fcdb392c4351d0c1.css" rel="stylesheet"></head>
 <body>
 <div class="l-wrap">
 
@@ -40,35 +40,35 @@
         <div class="side-menu-wrapper">
             <table class="side-menu-1">
                 <tr>
-                    <td><a href="#"><img class="main-middle-left-img1"></a></td>
-                    <td><a href="#"><img class="main-middle-left-img2"></a></td>
-                    <td><a href="#"><img class="main-middle-left-img3"></a></td>
+                    <td><a href="#"><img id="main-middle-left-img1"></a></td>
+                    <td><a href="#"><img id="main-middle-left-img2"></a></td>
+                    <td><a href="#"><img id="main-middle-left-img3"></a></td>
                 </tr>
                 <tr>
-                    <td><a href="#"><img class="main-middle-left-img4"></a></td>
-                    <td><a href="#"><img class="main-middle-left-img5"></a></td>
-                    <td><a href="#"><img class="main-middle-left-img6"></a></td>
+                    <td><a href="#"><img id="main-middle-left-img4"></a></td>
+                    <td><a href="#"><img id="main-middle-left-img5"></a></td>
+                    <td><a href="#"><img id="main-middle-left-img6"></a></td>
                 </tr>
                 <tr>
-                    <td><a href="#"><img class="main-middle-left-img7"></a></td>
-                    <td><a href="#"><img class="main-middle-left-img8"></a></td>
-                    <td><a href="#"><img class="main-middle-left-img9"></a></td>
+                    <td><a href="#"><img id="main-middle-left-img7"></a></td>
+                    <td><a href="#"><img id="main-middle-left-img8"></a></td>
+                    <td><a href="#"><img id="main-middle-left-img9"></a></td>
                 </tr>
                 <tr>
-                    <td><a href="#"><img class="main-middle-left-img10"></a></td>
-                    <td><a href="#"><img class="main-middle-left-img11"></a></td>
-                    <td><a href="#"><img class="main-middle-left-img12"></a></td>
+                    <td><a href="#"><img id="main-middle-left-img10"></a></td>
+                    <td><a href="#"><img id="main-middle-left-img11"></a></td>
+                    <td><a href="#"><img id="main-middle-left-img12"></a></td>
                 </tr>
             </table>
-            <div class="border-solid1"></div>
-            <div class="border-solid2"></div>
-            <div class="border-solid3"></div>
-            <div class="border-solid4"></div>
-            <div class="border-dash1"></div>
-            <div class="border-dash2"></div>
-            <div class="border-dash3"></div>
-            <div class="border-dash4"></div>
-            <div class="border-dash5"></div>
+            <div id="border-solid1"></div>
+            <div id="border-solid2"></div>
+            <div id="border-solid3"></div>
+            <div id="border-solid4"></div>
+            <div id="border-dash1"></div>
+            <div id="border-dash2"></div>
+            <div id="border-dash3"></div>
+            <div id="border-dash4"></div>
+            <div id="border-dash5"></div>
             <div class="side-menu-2">
                 <a href="#"><img class="main-middle-left-img13"></a>
                 <a href="#"><img class="main-middle-left-img14"></a>
@@ -158,6 +158,36 @@
     </div>
 </main>
 </div>
+<script type="text/javascript">
+    // サイドメニューボーダー（外）
+    function sidemenu_border_solid(){
+        var top = '0.1vw', left = '0.1vw';
+        for (var i = 0; i < 4; i++){
+            var border_solid = document.getElementById('border-solid' + (i + 1));
+            if (i == 1)
+                left = '16.8vw';
+            if (i == 3)
+                top = '21.85vw';
+            if (i < 2)
+                border_solid.style = 'position: absolute; width: 0.05vw; height: 21.8vw; top: 0.1vw; left: ' + left + '; border-left: solid 0.1vw white;';
+            else
+                border_solid.style = 'position: absolute; width: 16.8vw; height: 0.05vw; top: ' + top + '; left:  0.1vw; border-top: solid 0.1vw white;';
+        }
+    }
+    sidemenu_border_solid();
+    // サイドメニューボーダー（中）
+    function sidemenu_border_dash() {
+        var top = 5.5, left = 5.5;
+        for (var i = 0; i < 5; i++){
+            var border_dash = document.getElementById('border-dash' + (i + 1));
+            if (i < 2)
+                border_dash.style = 'position: absolute; width: 0.1vw; height: 21.8vw; left: ' + (left + i * 5.9) + 'vw; top: 0.1vw; border-left: dashed 0.1vw white;';
+            else
+                border_dash.style = 'position: absolute; width: 16.75vw; height: 0.1vw; left: 0.1vw; top: ' + (top + (i - 2) * 5.5) + 'vw; border-top: dashed 0.1vw white;';
+        }
+    }
+    sidemenu_border_dash();
+</script>
 </div><!-- l-wrap -->
-<script type="text/javascript" src="assets/javascripts/bundle55a774eb7cc9c92fbbed.js"></script></body>
+<script type="text/javascript" src="assets/javascripts/bundlea9e6fcdb392c4351d0c1.js"></script></body>
 </html>
