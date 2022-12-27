@@ -1,0 +1,23 @@
+footer {
+	a {
+		letter-spacing: 0.4vw;
+		font-size: 3.8vw;
+		text-decoration: underline;
+	}
+}
+
+#foot-wrapper {
+	div {
+		margin-top:  -3.5vw;
+	}
+	display: flex;
+	align-items: center;
+	height: 35vw;
+	margin-left: 5vw;
+}
+
+#copyright {
+	content: url(../../../img/footer.copyright.png);
+	width: 75vw;
+	height: 15vw;
+}

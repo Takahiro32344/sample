@@ -1,0 +1,49 @@
+#head-wrapper {
+    background-color: #fafafa;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 100vw;
+    height: 20vw;
+}
+
+#logo {
+    &-img {
+        width: 33vw;
+        height: 16vw;
+        content: url(../../../img/logo.png);
+    }
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 66.5vw;
+    height: 14vw;
+}
+
+#loginbox {
+    span {
+        p {
+            font-size: 3vw;
+        }
+        margin-bottom: 0.3vw;
+    }
+    &-mark {
+        border-radius: 0.7vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #262626;
+        width: 12vw;
+        height: 12vw;
+    }
+    &-img {
+        width: 4vw;
+        height: 4vw;
+        content: url(../../../img/arrow.login.png);
+    }
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 20vw;
+    height: 20vw;
+}

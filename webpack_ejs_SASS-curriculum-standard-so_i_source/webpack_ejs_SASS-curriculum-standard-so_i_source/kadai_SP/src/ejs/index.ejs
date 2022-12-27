@@ -1,0 +1,461 @@
+<% var title = "TOP"; var description = "トップのdescription"; %> <% include
+src/ejs/template/_head %>
+<header id="head-wrapper">
+    <div id="logo"><img id="logo-img"></div>
+    <div id="loginbox">
+        <a href="#">
+            <span>
+                <div id="loginbox-mark">
+                    <img id="loginbox-img">
+                </div>
+                <p>ログイン</p>
+            </span>
+        </a>
+    </div>
+</header>
+<main id="main-wrapper">
+    <p id="head-bottom-string">家具情報サイト スタルーム</p>
+    <ul>
+        <a href="#"><li><div id="list-mark">▶</div>カテゴリから探す</li></a>
+        <a href="#"><li><div id="list-mark">▶</div>ブランドから探す</li></a>
+        <a href="#"><li><div id="list-mark">▶</div>ランキングから探す</li></a>
+        <a href="#"><li><div id="list-mark">▶</div>コーディネートから探す</li></a>
+        <a href="#"><li><div id="list-mark">▶</div>お近くの店舗を探す</li></a>
+    </ul>
+    <div id="dot1"></div>
+    <div id="carousel">
+        <div id="carousel-img">
+            <div id="carousel-img-1">
+                <div id="carousel-img-1-new-mark">
+                    <p id="carousel-img-1-new-mark-innerlogo">NEW</p>
+                </div>
+                <p id="carousel-img-1-innerlogo"><span>インテリアコーディネート<br><span>SM-NU-1501</span></span></p>
+            </div>
+            <div id="carousel-img-2">
+                <div id="carousel-img-2-new-mark">
+                    <p id="carousel-img-2-new-mark-innerlogo">NEW</p>
+                </div>
+                <p id="carousel-img-2-innerlogo"><span>インテリアコーディネート<br><span>SM-NU-1502</span></span></p>
+            </div>
+            <div id="carousel-img-3">
+                <div id="carousel-img-3-new-mark">
+                    <p id="carousel-img-3-new-mark-innerlogo">NEW</p>
+                </div>
+                <p id="carousel-img-3-innerlogo"><span>インテリアコーディネート<br><span>SM-NU-1503</span></span></p>
+            </div>
+            <div id="carousel-img-4">
+                <div id="carousel-img-4-new-mark">
+                    <p id="carousel-img-4-new-mark-innerlogo">NEW</p>
+                </div>
+                <p id="carousel-img-4-innerlogo"><span>インテリアコーディネート<br><span>SM-NU-1504</span></span></p>
+            </div>
+            <div id="carousel-img-5">
+                <div id="carousel-img-5-new-mark">
+                    <p id="carousel-img-5-new-mark-innerlogo">NEW</p>
+                </div>
+                <p id="carousel-img-5-innerlogo"><span>インテリアコーディネート<br><span>SM-NU-1505</span></span></p>
+            </div>
+        </div>
+        <div id="carousel-indicator">
+            <div id="carousel-indicator-1" onclick="carousel_indicator_change_color1()"></div>
+            <div id="carousel-indicator-2" onclick="carousel_indicator_change_color2()"></div>
+            <div id="carousel-indicator-3" onclick="carousel_indicator_change_color3()"></div>
+            <div id="carousel-indicator-4" onclick="carousel_indicator_change_color4()"></div>
+            <div id="carousel-indicator-5" onclick="carousel_indicator_change_color5()"></div>
+        </div>
+    </div>
+    <div id="dot2"></div>
+    <div id="coordinate-image-wrapper"></div>
+    <a href="#">
+        <div id="more-look">
+            <p>アイテムをもっと見る</p>
+            <img id="serch-mark">
+        </div>
+    </a>
+    <div id="box-wrapper"></div>
+    <div id ="ranking-wrapper">
+        <a href="#"><div id="ranking"><img id="serch-mark"></div></a>
+    </div>
+    <div id="dot3"></div>
+    <div id="main-bottom-menu">
+        <p>
+            <a href="#">サイトマップ</a>/
+            <a href="#">リクルールID規約</a>/<br>
+            <a href="#">利用規約</a>/
+            <a href="#">よくあるご質問</a>/<br>
+            <a href="#">プライバシーポリシー</a>
+        </p>
+    </div>
+</main>
+<footer id="foot-wrapper">
+    <div>
+        <img id="copyright"><br>
+        <a href="#">リクルールサイトへ</a>
+    </div>
+</footer>
+
+<script type="text/javascript">
+    // ドット
+    var parent = new Array(3);
+    for (var i = 0; i < 3; i++)
+        parent[i] = document.getElementById('dot' + (i + 1));
+
+    for (var i = 0; i < 52 * 3; i++){
+        var newdiv = document.createElement('div');
+        newdiv.setAttribute('id', 'dot-' + (i + 1));
+        newdiv.innerHTML = '<div id="dot-' + (i + 1) + '"></div>';
+        newdiv.style = 'margin-right: 1.37vw; width: 0.78vw; height: 6.5vw;'
+        if (i < 52)
+            parent[0].appendChild(newdiv);
+        else if (i >= 52 && i < 52 * 2)
+            parent[1].appendChild(newdiv);
+        else
+            parent[2].appendChild(newdiv);
+    }
+    // カルーセルアニメーション
+    function carousel_indicator_change_color1() {
+        // 画像スライド処理
+        document.getElementById('carousel-img-1').style = 'left: 0vw; transition: .5s;';
+        document.getElementById('carousel-img-2').style = 'left: 100vw; transition: .5s;';
+        document.getElementById('carousel-img-3').style = 'left: 200vw; transition: .5s;';
+        document.getElementById('carousel-img-4').style = 'left: 300vw; transition: .5s;';
+        document.getElementById('carousel-img-5').style = 'left: 400vw; transition: .5s;';
+        // インジケーター処理
+        for (var i = 0; i < 5; i++)
+            if (i == 0)
+                document.getElementById('carousel-indicator-' + (i + 1)).style = 'background-color: #b300f4;';
+            else
+                document.getElementById('carousel-indicator-' + (i + 1)).style = 'background-color: #e8e8e8;';
+    }
+
+    function carousel_indicator_change_color2() {
+        document.getElementById('carousel-img-1').style = 'left: -100vw; transition: .5s;';
+        document.getElementById('carousel-img-2').style = 'left: 0vw; transition: .5s;';
+        document.getElementById('carousel-img-3').style = 'left: 100vw; transition: .5s;';
+        document.getElementById('carousel-img-4').style = 'left: 200vw; transition: .5s;';
+        document.getElementById('carousel-img-5').style = 'left: 300vw; transition: .5s;';
+        for (var i = 0; i < 5; i++)
+            if (i == 1)
+                document.getElementById('carousel-indicator-' + (i + 1)).style = 'background-color: #b300f4;';
+            else
+                document.getElementById('carousel-indicator-' + (i + 1)).style = 'background-color: #e8e8e8;';
+    }
+    function carousel_indicator_change_color3() {
+        document.getElementById('carousel-img-1').style = 'left: -200vw; transition: .5s;';
+        document.getElementById('carousel-img-2').style = 'left: -100vw; transition: .5s;';
+        document.getElementById('carousel-img-3').style = 'left: 0vw; transition: .5s;';
+        document.getElementById('carousel-img-4').style = 'left: 100vw; transition: .5s;';
+        document.getElementById('carousel-img-5').style = 'left: 200vw; transition: .5s;';
+        for (var i = 0; i < 5; i++)
+            if (i == 2)
+                document.getElementById('carousel-indicator-' + (i + 1)).style = 'background-color: #b300f4;';
+            else
+                document.getElementById('carousel-indicator-' + (i + 1)).style = 'background-color: #e8e8e8;';
+    }
+    function carousel_indicator_change_color4() {
+        document.getElementById('carousel-img-1').style = 'left: -300vw; transition: .5s;';
+        document.getElementById('carousel-img-2').style = 'left: -200vw; transition: .5s;';
+        document.getElementById('carousel-img-3').style = 'left: -100vw; transition: .5s;';
+        document.getElementById('carousel-img-4').style = 'left: 0vw; transition: .5s;';
+        document.getElementById('carousel-img-5').style = 'left: 100vw; transition: .5s;';
+        for (var i = 0; i < 5; i++)
+            if (i == 3)
+                document.getElementById('carousel-indicator-' + (i + 1)).style = 'background-color: #b300f4;';
+            else
+                document.getElementById('carousel-indicator-' + (i + 1)).style = 'background-color: #e8e8e8;';
+    }
+    function carousel_indicator_change_color5() {
+        document.getElementById('carousel-img-1').style = 'left: -400vw; transition: .5s;';
+        document.getElementById('carousel-img-2').style = 'left: -300vw; transition: .5s;';
+        document.getElementById('carousel-img-3').style = 'left: -200vw; transition: .5s;';
+        document.getElementById('carousel-img-4').style = 'left: -100vw; transition: .5s;';
+        document.getElementById('carousel-img-5').style = 'left: 0vw; transition: .5s;';
+        for (var i = 0; i < 5; i++)
+            if (i == 4)
+                document.getElementById('carousel-indicator-' + (i + 1)).style = 'background-color: #b300f4;';
+            else
+                document.getElementById('carousel-indicator-' + (i + 1)).style = 'background-color: #e8e8e8;';
+    }
+    // コーディネートイメージ
+    var parent = new Array(2);
+    parent[0] = document.getElementById('coordinate-image-wrapper');
+    for (var i = 0; i < 18; i++){
+        // ボックス
+        var newdiv = document.createElement('div');
+        newdiv.setAttribute('id', 'coordinate-image-box' + (i+ 1));
+        newdiv.innerHTML = '<div id="coordinate-image-box' + (i + 1) + '"></div>';
+        newdiv.style = 'display: flex; justify-content: center; align-items: center; margin: -0.25vw; width: 32.5vw; height: 33vw;';
+        parent[0].appendChild(newdiv);
+
+        // イメージ
+        var height;
+        if (i == 1 || i == 5 || i == 9 || i == 13 || i == 17)
+            height = '18vw';
+        else
+            height = '25vw';
+
+        parent[1] = document.getElementById('coordinate-image-box' + (i + 1));
+        var newimg = document.createElement('img');
+        newimg.setAttribute('id', 'coordinate-image' + (i+ 1));
+        newimg.innerHTML = '<img id="coordinate-image' + (i + 1) + '">';
+        newimg.style = 'width: 25vw; height: ' + height;
+        parent[1].appendChild(newimg);
+    }
+    // ボーダー
+    var top, left;
+    parent = document.getElementById('coordinate-image-wrapper');
+
+    for (var i = 0; i < 10; i++){
+        if (i < 4) {
+            left = (2 + i * 32) + 'vw';
+            var border = document.createElement('div');
+            border.setAttribute('id', 'border-' + (i + 1));
+            border.innerHTML = '<div id="border-' + (i + 1) + '"></div>';
+            border.style = 'position: absolute; width: 0.3vw; height: 197vw; top: 0vw; left: ' + left + '; border-left: solid 0.3vw #e8e8e8';
+            parent.appendChild(border);
+        }else{
+            top = (33 + (i - 4) * 32.75) + 'vw';
+            var border = document.createElement('div');
+            border.setAttribute('id', 'border-' + (i + 1));
+            border.innerHTML = '<div id="border-' + (i + 1) + '"></div>';
+            border.style = 'position: absolute; width: 96vw; height: 0.3vw; top: ' + top +'; left 0.3vw; border-top: solid 0.3vw #e8e8e8';
+            parent.appendChild(border);
+        }
+    }
+    // ボックス
+    var width;
+    var height = new Array(2), parent = new Array(2);
+    parent[0] = document.getElementById('box-wrapper');
+    // ボックス・インナーボックス
+    for (var i = 0; i < 5; i++){
+        var newdiv = document.createElement('div');
+        newdiv.setAttribute('id', 'box-background-' + (i + 1));
+        newdiv.innerHTML = '<div id="box-background-' + (i + 1) + '"></div>';
+        switch (i){
+            case 0:     // フリーワード検索
+                height[0] = '43vw';
+                height[1] = '38vw';
+                break;
+            case 1:     // カスタマーレビュー
+            case 2:     // 家具・インテリアArticle
+                height[0] = '171vw';
+                height[1] = '166vw';
+                break;
+            case 3:     // 各アカウントのログイン
+                height[0] = '100vw';
+                height[1] = '95vw';
+                break;
+            case 4:     // Facebook
+                height[0] = '85vw';
+                height[1] = '80vw';
+                break;
+        }
+        newdiv.style = 'display: flex; justify-content: center; align-items: center; margin-top: 1vw; background-color: #e8e8e8; width: 90vw; height: ' + height[0] + '; ';
+        parent[0].appendChild(newdiv);
+        // インナーボックス
+        parent[1] = document.getElementById('box-background-' + (i + 1));
+        newdiv = document.createElement('div');
+        newdiv.setAttribute('id', 'innerBox-' + (i + 1));
+        newdiv.innerHTML = '<div id="innerBox-' + (i + 1) + '"></div>';
+        newdiv.style = 'border: solid 0.3vw #262626; background-color: white; width: 85vw; height: ' + height[1] + '; ';
+        parent[1].appendChild(newdiv);
+    }
+    // 格インナーボックス内コンテンツ
+    for (var i = 0; i < 5; i++){
+        var parent = document.getElementById('innerBox-' + (i + 1));
+        var newdiv = document.createElement('div');
+        newdiv.setAttribute('id', 'link-'+ (i + 1));
+        switch (i){
+                case 0:     // フリー検索
+                    newdiv.innerHTML = '<div id="link-' + (i + 1) + '">フリーワードで探す<br><p><span>アイテムを探す</span></p><input id="input" type="text"><br><a href="#"><input id="button" type="Button" value="検索"></a></div>';
+                    newdiv.style = 'margin-top: 4vw; margin-left: 5vw;';
+                    parent.appendChild(newdiv);
+                    break;
+                case 1:     // カスタマーレビュー
+                case 2:     // 家具・インテリアArticle
+                    newdiv.innerHTML = '<div id="link-' + (i + 1) + '"></div>';
+                    parent.appendChild(newdiv);
+                    // ul追加
+                    var parentdiv = document.getElementById('link-' + (i + 1));
+                    var newul = document.createElement('ul');
+                    newul.setAttribute('id', 'list-' + i);
+                    newul.innerHTML = '<ul id="list-' + i + '"></ul>';
+                    newul.style = 'margin: 0 auto; width: 75vw;';
+                    parentdiv.appendChild(newul);
+                    // li追加
+                    for (var j = 0; j < 11; j++){
+                        var parentul = document.getElementById('list-' + i);
+                        var newli = document.createElement('li');
+                        if (i == 1){
+                            newli.setAttribute('id', 'item-1-' + (j + 1));
+                            switch (j){
+                                case 0:
+                                    newli.innerHTML = '<li id="item-1-' + (j + 1) + '"><img id="list1-item1"><font style="font-weight: bold; font-size: 4vw;">カスタマーレビュー</font></li>';
+                                    newli.style = 'margin: 0 auto; width: 75vw; height: 15vw; border-bottom: solid 0.3vw #e8e8e8;';
+                                    break;
+                                case 1:
+                                    newli.innerHTML = '<li id="item-1-' + (j + 1) + '"><a href="#"><div id="item-space"><span>Atelier table / brown<p>NEW</p></span><img id="serch-mark"></div></a></li>';
+                                    newli.style = 'margin: 0 auto; width: 75vw; height: 15vw; border-bottom: solid 0.3vw #e8e8e8;';
+                                    break;
+                                case 2:
+                                    newli.innerHTML = '<li id="item-1-' + (j + 1) + '"><a href="#"><div id="item-space">Living sofa / bule<img id="serch-mark"></div></a></li>';
+                                    newli.style = 'margin: 0 auto; width: 75vw; height: 15vw; border-bottom: solid 0.3vw #e8e8e8;';
+                                    break;
+                                case 3:
+                                    newli.innerHTML = '<li id="item-1-' + (j + 1) + '"><a href="#"><div id="item-space">一枚の板檜の机 / natural brown<img id="serch-mark"></div></a></li>';
+                                    newli.style = 'margin: 0 auto; width: 75vw; height: 15vw; border-bottom: solid 0.3vw #e8e8e8;';
+                                    break;
+                                case 4:
+                                    newli.innerHTML = '<li id="item-1-' + (j + 1) + '"><a href="#"><div id="item-space">大人数掛けソファー(最大8名)<br>/ beige<img id="serch-mark"></div></a></li>';
+                                    newli.style = 'space-between; margin: 0 auto; width: 75vw; height: 15vw; border-bottom: solid 0.3vw #e8e8e8;';
+                                    break;
+                                case 5:
+                                    newli.innerHTML = '<li id="item-1-' + (j + 1) + '"><a href="#"><div id="item-space">Simple chair / brown<img id="serch-mark"></div></a></li>';
+                                    newli.style = 'margin: 0 auto; width: 75vw; height: 15vw; border-bottom: solid 0.3vw #e8e8e8;';
+                                    break;
+                                case 6:
+                                    newli.innerHTML = '<li id="item-1-' + (j + 1) + '"><a href="#"><div id="item-space">Order made table / natural<img id="serch-mark"></div></a></li>';
+                                    newli.style = 'margin: 0 auto; width: 75vw; height: 15vw; border-bottom: solid 0.3vw #e8e8e8;';
+                                    break;
+                                case 7:
+                                    newli.innerHTML = '<li id="item-1-' + (j + 1) + '"><a href="#"><div id="item-space">Haute couture Maison Aoi<br>/ natural<img id="serch-mark"></div></a></li>';
+                                    newli.style = 'margin: 0 auto; width: 75vw; height: 15vw; border-bottom: solid 0.3vw #e8e8e8;';
+                                    break;
+                                case 8:
+                                    newli.innerHTML = '<li id="item-1-' + (j + 1) + '"><a href="#"><div id="item-space">Haute couture Aterier Pari\'s<br>/ rich black<img id="serch-mark"></div></a></li>';
+                                    newli.style = 'margin: 0 auto; width: 75vw; height: 15vw; border-bottom: solid 0.3vw #e8e8e8;';
+                                    break;
+                                case 9:
+                                    newli.innerHTML = '<li id="item-1-' + (j + 1) + '"><a href="#"><div id="item-space">伝統技術漆塗り化粧収納棚<br>/ red<img id="serch-mark"></div></a></li>';
+                                    newli.style = 'margin: 0 auto; width: 75vw; height: 15vw; border-bottom: solid 0.3vw #e8e8e8;';
+                                    break;
+                                case 10:
+                                    newli.innerHTML = '<li id="item-1-' + (j + 1) + '"><a href="#"><div style="display: flex; align-items: center; width: 75vw; height: 15vw;"><font style="margin-right: 2vw; font-size: 6vw;">➡</font>クチコミ一覧を見る</div></a></li>';
+                                    newli.style = 'font-weight: bold; font-size: 4vw; margin: 0 auto; width: 75vw; height: 15vw;';
+                                    break;
+                            }
+                            parentul.appendChild(newli);
+                        }else {
+                            newli.setAttribute('id', 'item-2-' + (j + 1));
+                            switch (j){
+                                case 0:
+                                    newli.innerHTML = '<li id="item-2-' + (j + 1) + '"><div style="font-weight: bold; font-size: 3.5vw; display: flex; height: 15vw; align-items: end; margin-bottom: 1vw;"><img id="list2-item1">家具・インテリア<br>Article</div></li>';
+                                    newli.style = 'margin: 0 auto; width: 75vw; height: 15vw; border-bottom: solid 0.3vw #e8e8e8;';
+                                    break;
+                                case 1:
+                                    newli.innerHTML = '<li id="item-2-' + (j + 1) + '"><a href="#"><div id="item-space"><span><img id="list2-item2">工業デザインに触れる<p>NEW</p></span><img id="serch-mark"></div></a></li>';
+                                    newli.style = 'margin: 0 auto; width: 75vw; height: 15vw; border-bottom: solid 0.3vw #e8e8e8;';
+                                    break;
+                                case 2:
+                                    newli.innerHTML = '<li id="item-2-' + (j + 1) + '"><a href="#"><div id="item-space"><span><img id="list2-item3">国内産椅子の制作手順<p>NEW</p></span><img id="serch-mark"></div></a></li>';
+                                    newli.style = 'margin: 0 auto; width: 75vw; height: 15vw; border-bottom: solid 0.3vw #e8e8e8;';
+                                    break;
+                                case 3:
+                                    newli.innerHTML = '<li id="item-2-' + (j + 1) + '"><a href="#"><div id="item-space"><span><img id="list2-item4">超高級ランプを活かす<br>お部屋づくり</span><img id="serch-mark"></div></a></li>';
+                                    newli.style = 'margin: 0 auto; width: 75vw; height: 15vw; border-bottom: solid 0.3vw #e8e8e8;';
+                                    break;
+                                case 4:
+                                    newli.innerHTML = '<li id="item-2-' + (j + 1) + '"><a href="#"><div id="item-space"><span><img id="list2-item5">小麦のSDGsを考えた<br>未来の家具</span><img id="serch-mark"></div></a></li>';
+                                    newli.style = 'margin: 0 auto; width: 75vw; height: 15vw; border-bottom: solid 0.3vw #e8e8e8;';
+                                    break;
+                                case 5:
+                                    newli.innerHTML = '<li id="item-2-' + (j + 1) + '"><a href="#"><div id="item-space"><span><img id="list2-item6">一息つけるキッチン特集</span><img id="serch-mark"></div></a></li>';
+                                    newli.style = 'margin: 0 auto; width: 75vw; height: 15vw; border-bottom: solid 0.3vw #e8e8e8;';
+                                    break;
+                                case 6:
+                                    newli.innerHTML = '<li id="item-2-' + (j + 1) + '"><a href="#"><div id="item-space"><span><img id="list2-item7">おしゃれ空間の作り方</span><img id="serch-mark"></div></a></li>';
+                                    newli.style = 'margin: 0 auto; width: 75vw; height: 15vw; border-bottom: solid 0.3vw #e8e8e8;';
+                                    break;
+                                case 7:
+                                    newli.innerHTML = '<li id="item-2-' + (j + 1) + '"><a href="#"><div id="item-space"><span><img id="list2-item8">思い出の品とうまく同居<br>する方法</span><img id="serch-mark"></div></a></li>';
+                                    newli.style = 'margin: 0 auto; width: 75vw; height: 15vw; border-bottom: solid 0.3vw #e8e8e8;';
+                                    break;
+                                case 8:
+                                    newli.innerHTML = '<li id="item-2-' + (j + 1) + '"><a href="#"><div id="item-space"><span><img id="list2-item9">快眠になる寝室特集</span><img id="serch-mark"></div></a></li>';
+                                    newli.style = 'margin: 0 auto; width: 75vw; height: 15vw; border-bottom: solid 0.3vw #e8e8e8;';
+                                    break;
+                                case 9:
+                                    newli.innerHTML = '<li id="item-2-' + (j + 1) + '"><a href="#"><div id="item-space"><span><img id="list2-item10">間接照明のワークショップ</span><img id="serch-mark"></div></a></li>';
+                                    newli.style = 'margin: 0 auto; width: 75vw; height: 15vw; border-bottom: solid 0.3vw #e8e8e8;';
+                                    break;
+                                case 10:
+                                    newli.innerHTML = '<li id="item-2-' + (j + 1) + '"><a href="#"><div style="display: flex; align-items: center; width: 75vw; height: 15vw; font-weight: bold;"><font style="font-size: 6vw; margin-right: 2vw;">➡</font>特集一覧を見る</div></a></li>';
+                                    newli.style = 'margin: 0 auto; width: 75vw; height: 15vw;';
+                                    break;
+                            }
+                            parentul.appendChild(newli);
+                        }
+                    }
+                    break;
+                case 3:     // 各アカウントログイン
+                    newdiv.innerHTML = '<div id="link-' + (i + 1) + '"><ul id="list-' + i + '"></ul></div>';
+                    parent.appendChild(newdiv);
+                    // ul追加
+                    var parentdiv = document.getElementById('link-' + (i + 1));
+                    var newul = document.createElement('ul');
+                    newul.setAttribute('id', 'list-' + i);
+                    newul.innerHTML = '<ul id="list-' + i + '"></ul>';
+                    newul.style = 'margin: 0 auto; width: 75vw;';
+                    parentdiv.appendChild(newul);
+                    // li追加
+                    for (var j = 0; j < 5; j++){
+                        var parentul = document.getElementById('list-' + i);
+                        var newli = document.createElement('li');
+                        switch(j){
+                            case 0:
+                                newli.innerHTML = '<li id="item-3-' + (j + 1) + '"><a href="#"><div style="display: flex; align-items: center; justify-content: space-between; width: 65vw; height: 25vw; border-bottom: solid 0.3vw #e8e8e8;"><div style="display: flex; align-items: center;"><img id="recruit"><p style="font-weight: bold; font-size: 4.2vw;">リクルールIDでログイン<br><span style="font-size: 3.7vw; font-weight: normal;">(リクルールIDをお持ちの方<br>はこちら)</span></p></div><img id="serch-mark"></div></a></li>';
+                                newli.style = 'margin-left: 14.8vw; width: 65vw; height: 25vw;';
+                                break;
+                            case 1:
+                                newli.innerHTML = '<li id="item-3-' + (j + 1) + '"><a href="#"><div style="font-weight: bold; margin-right: 4vw; margin-top: 2vw; display: flex; justify-content: end; width: 65vw; height: 20vw;"><font style="margin-right: 2vw; margin-top: -2vw; font-size: 6vw; ">➡</font>リクルールIDを新規会員登<br>録する</div></a></li>';
+                                newli.style = 'margin-left: 14.8vw; width: 65vw; height: 22vw;';
+                                break;
+                            case 2:
+                                newli.innerHTML = '<li id="item-3-' + (j + 1) + '"><a href="#"><div style="display: flex; justify-content: space-between; align-items: center; width: 75vw; height: 15vw; border-top: solid 0.3vw #e8e8e8; border-bottom: solid 0.3vw #e8e8e8;"><span><img id="account-' + (j - 1) + '">Googleアカウントでログイン</span><img id="serch-mark"></div></a></li>';
+                                newli.style = 'margin: 0 auto; width: 75vw; height: 15vw;';
+                                break;
+                            case 3:
+                                newli.innerHTML = '<li id="item-3-' + (j + 1) + '"><a href="#"><div style="display: flex; justify-content: space-between; align-items: center; width: 75vw; height: 15vw; border-bottom: solid 0.3vw #e8e8e8;"><span><img id="account-' + (j - 1) + '">Twitterでログイン</span><img id="serch-mark"></div></a></li>';
+                                newli.style = 'margin: 0 auto; width: 75vw; height: 15vw;';
+                                break;
+                            case 4:
+                                newli.innerHTML = '<li id="item-3-' + (j + 1) + '"><a href="#"><div style="display: flex; justify-content: space-between; align-items: center; width: 75vw; height: 15vw;"><span><img id="account-' + (j - 1) + '">Facebookでログイン</span><img id="serch-mark"></div></a></li>';
+                                newli.style = 'margin: 0 auto; width: 75vw; height: 15vw;';
+                                break;
+                        }
+                        parentul.appendChild(newli);
+                    }
+                    break;
+                case 4:     // Facebook
+                    newdiv.innerHTML = '<div id="link-' + (i + 1) + '"><ul id="list-' + i + '"></ul></div>';
+                    parent.appendChild(newdiv);
+                    // ul追加
+                    var parentdiv = document.getElementById('link-' + (i + 1));
+                    var newul = document.createElement('ul');
+                    newul.setAttribute('id', 'list-' + i);
+                    newul.innerHTML = '<ul id="list-' + i + '"></ul>';
+                    parentdiv.appendChild(newul);
+                    for (var j = 0; j < 3; j++){
+                        var parentul = document.getElementById('list-' + i);
+                        var newli = document.createElement('li');
+                        switch(j){
+                            case 0:
+                                newli.innerHTML = '<li id="item-4-' + (j + 1) + '"><div style="display: flex; justify-content: space-between; align-items: center; width: 75vw; height: 25vw;"><img id="logo-img"><span style="margin-top: 4vw; margin-right: 3vw;"><font style="font-size: 4.5vw; color: #031cdd; text-decoration: underline;"><a href="#">STAROOM(スタルーム)</a><br><a href="#" id="good"><img id="good-img"></a></font></span></div></li>';
+                                newli.style = 'margin: 0 auto; width: 75vw; height: 25vw; border-bottom: solid 0.3vw #e8e8e8;';
+                                break;
+                            case 1:
+                                newli.innerHTML = '<li id="item-4-' + (j + 1) + '"><p style="margin-left: 2vw;"><div style="margin-top: 2.2vw;"><span style="letter-spacing: 0.3vw;">32,782人がSTAROOM(スタルーム)</span><br>について「いいね！」と言っています。</p><table id="facebook-good-img"><tr style="display: flex; flex-wrap: wrap;"><td><img id="facebook-good-img-1"></td><td><img id="facebook-good-img-2"></td><td><img id="facebook-good-img-3"></td><td><img id="facebook-good-img-4"></td><td><img id="facebook-good-img-5"></td><td><img id="facebook-good-img-6"></td><td><img id="facebook-good-img-7"></td><td><img id="facebook-good-img-8"></td></tr></table></div></li>';
+                                newli.style = 'margin: 0 auto; width: 75vw; height: 35vw; border-bottom: solid 0.3vw #e8e8e8;';
+                                break;
+                            case 2:
+                                newli.innerHTML = '<li id="item-4-' + (j + 1) + '"><a href="#"><div style="display: flex; justify-content: space-between; align-items: center; width: 75vw; height: 15vw;"><img id="account-3">Facebookソーシャルプラグイン</div></a></li>';
+                                newli.style = 'margin: 0 auto; width: 75vw; height: 15vw;';
+                                break;
+                        }
+                        parentul.appendChild(newli);
+                    }
+                    break;
+        }
+    }
+</script>
+<% include src/ejs/template/_footer %>
