@@ -117,67 +117,56 @@ src/ejs/template/_head %>
     dot();
     // カルーセルアニメーション
     function carousel_indicator_change_color1() {
-        // 画像スライド処理
-        document.getElementById('carousel-img-1').style = 'left: 0vw; transition: .5s;';
-        document.getElementById('carousel-img-2').style = 'left: 100vw; transition: .5s;';
-        document.getElementById('carousel-img-3').style = 'left: 200vw; transition: .5s;';
-        document.getElementById('carousel-img-4').style = 'left: 300vw; transition: .5s;';
-        document.getElementById('carousel-img-5').style = 'left: 400vw; transition: .5s;';
-        // インジケーター処理
+        var ofset = 100;
         for (var i = 0; i < 5; i++)
-            if (i == 0)
+            if (i == 0){
+                document.getElementById('carousel-img-' + (i + 1)).style = 'left: ' + (i * 100) + 'vw; transition: .5s;';
                 document.getElementById('carousel-indicator-' + (i + 1)).style = 'background-color: #b300f4;';
-            else
+            }else{
+                document.getElementById('carousel-img-' + (i + 1)).style = 'left: ' + (i * 100) + 'vw; transition: .5s;';
                 document.getElementById('carousel-indicator-' + (i + 1)).style = 'background-color: #e8e8e8;';
+            }
     }
 
     function carousel_indicator_change_color2() {
-        document.getElementById('carousel-img-1').style = 'left: -100vw; transition: .5s;';
-        document.getElementById('carousel-img-2').style = 'left: 0vw; transition: .5s;';
-        document.getElementById('carousel-img-3').style = 'left: 100vw; transition: .5s;';
-        document.getElementById('carousel-img-4').style = 'left: 200vw; transition: .5s;';
-        document.getElementById('carousel-img-5').style = 'left: 300vw; transition: .5s;';
         for (var i = 0; i < 5; i++)
-            if (i == 1)
+            if (i == 1){
+                document.getElementById('carousel-img-' + (i + 1)).style = 'left: ' + ((i - 1) * 100) + 'vw; transition: .5s;';
                 document.getElementById('carousel-indicator-' + (i + 1)).style = 'background-color: #b300f4;';
-            else
+            }else{
+                document.getElementById('carousel-img-' + (i + 1)).style = 'left: ' + ((i - 1) * 100) + 'vw; transition: .5s;';
                 document.getElementById('carousel-indicator-' + (i + 1)).style = 'background-color: #e8e8e8;';
+            }
     }
     function carousel_indicator_change_color3() {
-        document.getElementById('carousel-img-1').style = 'left: -200vw; transition: .5s;';
-        document.getElementById('carousel-img-2').style = 'left: -100vw; transition: .5s;';
-        document.getElementById('carousel-img-3').style = 'left: 0vw; transition: .5s;';
-        document.getElementById('carousel-img-4').style = 'left: 100vw; transition: .5s;';
-        document.getElementById('carousel-img-5').style = 'left: 200vw; transition: .5s;';
         for (var i = 0; i < 5; i++)
-            if (i == 2)
+            if (i == 2){
+                document.getElementById('carousel-img-' + (i + 1)).style = 'left: ' + ((i - 2) * 100) + 'vw; transition: .5s;';
                 document.getElementById('carousel-indicator-' + (i + 1)).style = 'background-color: #b300f4;';
-            else
+            }else{
+                document.getElementById('carousel-img-' + (i + 1)).style = 'left: ' + ((i -2) * 100) + 'vw; transition: .5s;';
                 document.getElementById('carousel-indicator-' + (i + 1)).style = 'background-color: #e8e8e8;';
+            }
     }
     function carousel_indicator_change_color4() {
-        document.getElementById('carousel-img-1').style = 'left: -300vw; transition: .5s;';
-        document.getElementById('carousel-img-2').style = 'left: -200vw; transition: .5s;';
-        document.getElementById('carousel-img-3').style = 'left: -100vw; transition: .5s;';
-        document.getElementById('carousel-img-4').style = 'left: 0vw; transition: .5s;';
-        document.getElementById('carousel-img-5').style = 'left: 100vw; transition: .5s;';
         for (var i = 0; i < 5; i++)
-            if (i == 3)
+            if (i == 3){
+                document.getElementById('carousel-img-' + (i + 1)).style = 'left: ' + ((i - 3) * 100) + 'vw; transition: .5s;';
                 document.getElementById('carousel-indicator-' + (i + 1)).style = 'background-color: #b300f4;';
-            else
+            }else{
+                document.getElementById('carousel-img-' + (i + 1)).style = 'left: ' + ((i - 3) * 100) + 'vw; transition: .5s;';
                 document.getElementById('carousel-indicator-' + (i + 1)).style = 'background-color: #e8e8e8;';
+            }
     }
     function carousel_indicator_change_color5() {
-        document.getElementById('carousel-img-1').style = 'left: -400vw; transition: .5s;';
-        document.getElementById('carousel-img-2').style = 'left: -300vw; transition: .5s;';
-        document.getElementById('carousel-img-3').style = 'left: -200vw; transition: .5s;';
-        document.getElementById('carousel-img-4').style = 'left: -100vw; transition: .5s;';
-        document.getElementById('carousel-img-5').style = 'left: 0vw; transition: .5s;';
         for (var i = 0; i < 5; i++)
-            if (i == 4)
+            if (i == 4){
+                document.getElementById('carousel-img-' + (i + 1)).style = 'left: ' + ((i - 4) * 100) + 'vw; transition: .5s;';
                 document.getElementById('carousel-indicator-' + (i + 1)).style = 'background-color: #b300f4;';
-            else
+            }else{
+                document.getElementById('carousel-img-' + (i + 1)).style = 'left: ' + ((i - 4) * 100) + 'vw; transition: .5s;';
                 document.getElementById('carousel-indicator-' + (i + 1)).style = 'background-color: #e8e8e8;';
+            }
     }
     // コーディネートイメージ
     function coordinate_image() {
