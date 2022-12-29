@@ -324,7 +324,7 @@ $list-img-height: 8vw;
             content: url(../../../img/kagu_interior.png);
         }@else if $i >= 2 and $i <= 6 {
             content: url(../../../img/k_#{$i - 1}.png);
-        }@else {
+        }@else{
             @if $i == 9 {
                 content: url(../../../img/k_5.png);
             }@else if $i == 10 {
@@ -383,27 +383,18 @@ $list-img-height: 8vw;
             }
         }
     }
-}
-
-#account-1 {
-    margin-right: 2vw;
-    width: $list-img-width;
-    height: $list-img-height;
-    content: url(../../../img/google.png);
-}
-
-#account-2 {
-    margin-right: 2vw;
-    width: $list-img-width;
-    height: $list-img-height;
-    content: url(../../../img/twitter.png);
-}
-
-#account-3 {
-    margin-right: 2vw;
-    width: $list-img-width;
-    height: $list-img-height;
-    content: url(../../../img/facebook.png);
+    #account-#{$i} {
+        margin-right: 2vw;
+        width: $list-img-width;
+        height: $list-img-height;
+        @if $i == 1 {
+            content: url(../../../img/google.png);
+        }@else if $i == 2 {
+            content: url(../../../img/twitter.png);
+        }@else{
+            content: url(../../../img/facebook.png);
+        }
+    }
 }
 
 #good {
