@@ -117,55 +117,50 @@ src/ejs/template/_head %>
     dot();
     // カルーセルアニメーション
     function carousel_indicator_change_color1() {
-        for (var i = 0; i < 5; i++)
-            if (i == 0){
-                document.getElementById('carousel-img-' + (i + 1)).style = 'left: ' + (i * 100) + 'vw; transition: .5s;';
+        for (var i = 0; i < 5; i++){
+            if (i == 0)
                 document.getElementById('carousel-indicator-' + (i + 1)).style = 'background-color: #b300f4;';
-            }else{
-                document.getElementById('carousel-img-' + (i + 1)).style = 'left: ' + (i * 100) + 'vw; transition: .5s;';
+            else
                 document.getElementById('carousel-indicator-' + (i + 1)).style = 'background-color: #e8e8e8;';
-            }
+            document.getElementById('carousel-img-' + (i + 1)).style = 'left: ' + (i * 100) + 'vw; transition: .5s;';
+        }
     }
 
     function carousel_indicator_change_color2() {
-        for (var i = 0; i < 5; i++)
-            if (i == 1){
-                document.getElementById('carousel-img-' + (i + 1)).style = 'left: ' + ((i - 1) * 100) + 'vw; transition: .5s;';
+        for (var i = 0; i < 5; i++){
+            if (i == 1)
                 document.getElementById('carousel-indicator-' + (i + 1)).style = 'background-color: #b300f4;';
-            }else{
-                document.getElementById('carousel-img-' + (i + 1)).style = 'left: ' + ((i - 1) * 100) + 'vw; transition: .5s;';
+            else
                 document.getElementById('carousel-indicator-' + (i + 1)).style = 'background-color: #e8e8e8;';
-            }
+            document.getElementById('carousel-img-' + (i + 1)).style = 'left: ' + ((i - 1) * 100) + 'vw; transition: .5s;';
+        }
     }
     function carousel_indicator_change_color3() {
-        for (var i = 0; i < 5; i++)
-            if (i == 2){
-                document.getElementById('carousel-img-' + (i + 1)).style = 'left: ' + ((i - 2) * 100) + 'vw; transition: .5s;';
+        for (var i = 0; i < 5; i++){
+            if (i == 2)
                 document.getElementById('carousel-indicator-' + (i + 1)).style = 'background-color: #b300f4;';
-            }else{
-                document.getElementById('carousel-img-' + (i + 1)).style = 'left: ' + ((i - 2) * 100) + 'vw; transition: .5s;';
+            else
                 document.getElementById('carousel-indicator-' + (i + 1)).style = 'background-color: #e8e8e8;';
-            }
+            document.getElementById('carousel-img-' + (i + 1)).style = 'left: ' + ((i - 2) * 100) + 'vw; transition: .5s;';
+        }
     }
     function carousel_indicator_change_color4() {
-        for (var i = 0; i < 5; i++)
-            if (i == 3){
-                document.getElementById('carousel-img-' + (i + 1)).style = 'left: ' + ((i - 3) * 100) + 'vw; transition: .5s;';
+        for (var i = 0; i < 5; i++){
+            if (i == 3)
                 document.getElementById('carousel-indicator-' + (i + 1)).style = 'background-color: #b300f4;';
-            }else{
-                document.getElementById('carousel-img-' + (i + 1)).style = 'left: ' + ((i - 3) * 100) + 'vw; transition: .5s;';
+            else
                 document.getElementById('carousel-indicator-' + (i + 1)).style = 'background-color: #e8e8e8;';
-            }
+            document.getElementById('carousel-img-' + (i + 1)).style = 'left: ' + ((i - 3) * 100) + 'vw; transition: .5s;';
+        }
     }
     function carousel_indicator_change_color5() {
-        for (var i = 0; i < 5; i++)
-            if (i == 4){
-                document.getElementById('carousel-img-' + (i + 1)).style = 'left: ' + ((i - 4) * 100) + 'vw; transition: .5s;';
+        for (var i = 0; i < 5; i++){
+            if (i == 4)
                 document.getElementById('carousel-indicator-' + (i + 1)).style = 'background-color: #b300f4;';
-            }else{
-                document.getElementById('carousel-img-' + (i + 1)).style = 'left: ' + ((i - 4) * 100) + 'vw; transition: .5s;';
+            else
                 document.getElementById('carousel-indicator-' + (i + 1)).style = 'background-color: #e8e8e8;';
-            }
+            document.getElementById('carousel-img-' + (i + 1)).style = 'left: ' + ((i - 4) * 100) + 'vw; transition: .5s;';
+        }
     }
     // コーディネートイメージ
     function coordinate_image() {
