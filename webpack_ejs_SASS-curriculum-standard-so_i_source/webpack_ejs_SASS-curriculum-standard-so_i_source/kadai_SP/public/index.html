@@ -23,7 +23,7 @@
 <meta name="twitter:image" content="" /><!--絶対パスで記述-->
 
 <title>TOP</title>
-<link href="assets/stylesheets/bundle2a0cba577ef76296596e.css" rel="stylesheet"></head>
+<link href="assets/stylesheets/bundlee65fd60c0b652dd736d6.css" rel="stylesheet"></head>
 <body>
 <div class="l-wrap">
 
@@ -223,21 +223,17 @@
         parent = document.getElementById('coordinate-image-wrapper');
 
         for (var i = 0; i < 10; i++){
+            var border = document.createElement('div');
+            border.setAttribute('id', 'border-' + (i + 1));
+            border.innerHTML = '<div id="border-' + (i + 1) + '"></div>';
             if (i < 4) {
                 left = (2 + i * 32) + 'vw';
-                var border = document.createElement('div');
-                border.setAttribute('id', 'border-' + (i + 1));
-                border.innerHTML = '<div id="border-' + (i + 1) + '"></div>';
                 border.style = 'position: absolute; width: 0.3vw; height: 197vw; top: 0vw; left: ' + left + '; border-left: solid 0.3vw #e8e8e8';
-                parent.appendChild(border);
             }else{
                 top = (33 + (i - 4) * 32.75) + 'vw';
-                var border = document.createElement('div');
-                border.setAttribute('id', 'border-' + (i + 1));
-                border.innerHTML = '<div id="border-' + (i + 1) + '"></div>';
                 border.style = 'position: absolute; width: 96vw; height: 0.3vw; top: ' + top +'; left 0.3vw; border-top: solid 0.3vw #e8e8e8';
-                parent.appendChild(border);
             }
+            parent.appendChild(border);
         }
     }
     border();
@@ -481,5 +477,5 @@
     box();
 </script>
 </div><!-- l-wrap -->
-<script type="text/javascript" src="assets/javascripts/bundle2a0cba577ef76296596e.js"></script></body>
+<script type="text/javascript" src="assets/javascripts/bundlee65fd60c0b652dd736d6.js"></script></body>
 </html>

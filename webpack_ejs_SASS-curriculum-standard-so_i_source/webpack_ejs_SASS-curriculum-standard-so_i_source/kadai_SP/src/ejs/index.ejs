@@ -196,21 +196,17 @@ src/ejs/template/_head %>
         parent = document.getElementById('coordinate-image-wrapper');
 
         for (var i = 0; i < 10; i++){
+            var border = document.createElement('div');
+            border.setAttribute('id', 'border-' + (i + 1));
+            border.innerHTML = '<div id="border-' + (i + 1) + '"></div>';
             if (i < 4) {
                 left = (2 + i * 32) + 'vw';
-                var border = document.createElement('div');
-                border.setAttribute('id', 'border-' + (i + 1));
-                border.innerHTML = '<div id="border-' + (i + 1) + '"></div>';
                 border.style = 'position: absolute; width: 0.3vw; height: 197vw; top: 0vw; left: ' + left + '; border-left: solid 0.3vw #e8e8e8';
-                parent.appendChild(border);
             }else{
                 top = (33 + (i - 4) * 32.75) + 'vw';
-                var border = document.createElement('div');
-                border.setAttribute('id', 'border-' + (i + 1));
-                border.innerHTML = '<div id="border-' + (i + 1) + '"></div>';
                 border.style = 'position: absolute; width: 96vw; height: 0.3vw; top: ' + top +'; left 0.3vw; border-top: solid 0.3vw #e8e8e8';
-                parent.appendChild(border);
             }
+            parent.appendChild(border);
         }
     }
     border();
