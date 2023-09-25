@@ -230,6 +230,43 @@
         overflow: hidden;
     }
 
+    #tab_1 {
+        margin-top: 10px;
+        color: white;
+        background-color: #50c080;
+        text-underline-offset: 0.5em;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding-left: 13.3px;
+        padding-right: 13.3px;
+        padding-top: 20px;
+        padding-bottom: 21px;
+    }
+
+    #tab_2 {
+        margin-top: 10px;
+        border-bottom: solid 1px gray;
+        background-color: #70f0a0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding-left: 13.3px;
+        padding-right: 13.3px;
+        padding-top: 20px;
+        padding-bottom: 21px;
+    }
+
+    #tab_3 {
+        margin-top: 10px;
+        border-bottom: solid 1px gray;
+        background-color: #70f0a0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding-left: 13.3px;
+        padding-right: 13.3px;
+        padding-top: 20px;
+        padding-bottom: 21px;
+    }
+
     .image {
         position: relative;
         margin-top: 50px;
@@ -305,40 +342,6 @@
     span {
         margin-left: 0.06px;
         font-size: 22px;
-    }
-
-    #tab_1 {
-        color: white;
-        background-color: #50c080;
-        text-underline-offset: 0.5em;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        padding-left: 13.3px;
-        padding-right: 13.3px;
-        padding-top: 20px;
-        padding-bottom: 21px;
-    }
-
-    #tab_2 {
-        border-bottom: solid 1px gray;
-        background-color: #70f0a0;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        padding-left: 13.3px;
-        padding-right: 13.3px;
-        padding-top: 20px;
-        padding-bottom: 21px;
-    }
-
-    #tab_3 {
-        border-bottom: solid 1px gray;
-        background-color: #70f0a0;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        padding-left: 13.3px;
-        padding-right: 13.3px;
-        padding-top: 20px;
-        padding-bottom: 21px;
     }
 
     .margin {
