@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style_common.css">
+    <link rel="stylesheet" type="text/css" href="./css/style_PC.css">
+    <link rel="stylesheet" type="text/css" href="./css/style_tablet.css">
+    <link rel="stylesheet" type="text/css" href="./css/style_phone.css">
+    <title>占い</title>
+</head>
+<body>
+    <div id="appraisal_select" class="flex">
+        <div id="background"></div>
+        <div class="area_center">
+            <div>
+                <div class="image">
+                    <img id="image_1" src="./image/birth.png">
+                    <img id="image_2" src="./image/constellation.jpg">
+                    <img id="image_3" src="./image/name.jpg">
+                    <div class="mark_wrapper">
+                        <div class="mark_position">
+                            <span id="mark_1"></span>
+                            <span id="mark_2"></span>
+                            <span id="mark_3"></span>
+                        </div>
+                    </div>
+                </div>
+                <h1>今日の運勢</h1>
+                <div class="flex">
+                    <div>
+                        <div class="tab">
+                            <div class="margin">
+                                <span id="tab_1" onmouseover="mouse_over_tab1();" onmouseout="mouse_out_tab1();" onclick="tab1();">誕生日で占う</span>
+                                <span id="tab_2" onmouseover="mouse_over_tab2();" onmouseout="mouse_out_tab2();" onclick="tab2();">星座で占う</span>
+                                <span id="tab_3" onmouseover="mouse_over_tab3();" onmouseout="mouse_out_tab3();" onclick="tab3();">名前で占う</span>
+                            </div>
+                        </div>
+                        <form id="kantei" class="text-align">
+                            <div>
+                                <div>
+                                    <div id="appraisal_birthday">
+                                        <h2>誕生日で占う</h2>
+                                        <select name="year" id="birth_year">
+                                        </select>
+                                        <label>年</label><br class="display-br">
+                                        <select class="width" name="month" id="birth_month">
+                                        </select>
+                                        <label>月</label><br class="display-br">
+                                        <select class="width" name="day" id="birth_day">
+                                        </select>
+                                        <label>日</label>
+                                    </div>
+                                    <div id="appraisal_constellation">
+                                        <h2>星座で占う</h2>
+                                        <select id="constellation">
+                                            <option value="おとめ座">おとめ座</option>
+                                            <option value="おうし座">おうし座</option>
+                                            <option value="おひつじ座">おひつじ座</option>
+                                            <option value="みずがめ座">みずがめ座</option>
+                                            <option value="ふたご座">ふたご座</option>
+                                            <option value="かに座">かに座</option>
+                                            <option value="しし座">しし座</option>
+                                            <option value="さそり座">さそり座</option>
+                                            <option value="やぎ座">やぎ座</option>
+                                            <option value="うお座">うお座</option>
+                                            <option value="いて座">いて座</option>
+                                            <option value="てんびん座">てんびん座</option>
+                                        </select>
+                                    </div>
+                                    <div id="appraisal_name">
+                                        <h2>名前で占う</h2>
+                                        <input id="family_name" type="text" placeholder="姓(ひらがな)"><br>
+                                        <input id="name" type="text" placeholder="名(ひらがな)">
+                                    </div>
+                                    <input id="button" class="button" onclick="click_button();" type="button" value="鑑定">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="result_wrapper" class="flex">
+        <div class="background_result_wrapper"><img id="background_result"></div>
+        <div class="result_text_wrapper flex">
+            <div style="text-align: center;">
+                <div id="result_animation">
+                    <div id="aaa"></div>
+                    <h1>鑑定中</h1>
+                    <div id="load_indicator" class="margin-bottom">
+                        <div id="load_indicator1"></div>
+                        <div id="load_indicator2"></div>
+                        <div id="load_indicator3"></div>
+                    </div>
+                </div>
+                <div id="result_view">
+                    <h1>鑑定結果</h1>
+                    <div class="flex"><h2 id="result"></h2></div>
+                    <div id="result_text"></div>
+                    <input id="return" class="button_return" onclick="click_return();" type="button" value="戻る">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./javascript/initset.js"></script>
+    <script type="text/javascript" src="./javascript/element.js"></script>
+    <script type="text/javascript" src="./javascript/result_birthday.js"></script>
+    <script type="text/javascript" src="./javascript/result_constellation.js"></script>
+    <script type="text/javascript" src="./javascript/result_name.js"></script>
+    <script type="text/javascript" src="./javascript/validation.js"></script>
+    <script type="text/javascript" src="./javascript/event.js"></script>
+    <script type="text/javascript" src="./javascript/timer/background_set.js"></script>
+    <script type="text/javascript" src="./javascript/timer/carousel_animation.js"></script>
+    <script type="text/javascript" src="./javascript/timer/PC/fall_petal_1_PC.js"></script>
+    <script type="text/javascript" src="./javascript/timer/PC/fall_rain_PC.js"></script>
+    <script type="text/javascript" src="./javascript/timer/PC/fall_petal_2_PC.js"></script>
+    <script type="text/javascript" src="./javascript/timer/PC/fall_snow_PC.js"></script>
+    <script type="text/javascript" src="./javascript/timer/tablet/fall_petal_1_tablet.js"></script>
+    <script type="text/javascript" src="./javascript/timer/tablet/fall_rain_tablet.js"></script>
+    <script type="text/javascript" src="./javascript/timer/tablet/fall_petal_2_tablet.js"></script>
+    <script type="text/javascript" src="./javascript/timer/tablet/fall_snow_tablet.js"></script>
+    <script type="text/javascript" src="./javascript/timer/phone/fall_petal_1_phone.js"></script>
+    <script type="text/javascript" src="./javascript/timer/phone/fall_rain_phone.js"></script>
+    <script type="text/javascript" src="./javascript/timer/phone/fall_petal_2_phone.js"></script>
+    <script type="text/javascript" src="./javascript/timer/phone/fall_snow_phone.js"></script>
+    <script type="text/javascript" src="./javascript/timer/result_animation.js"></script>
+    <script type="text/javascript" src="./javascript/timer/timer.js"></script>
+</body>
+</html>
+
