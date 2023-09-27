@@ -44,7 +44,7 @@ setInterval(function () {
                 document.getElementById('image_1').style = "transition: .5s; left:" + left[0] + "px;";
                 document.getElementById('image_2').style = "transition: .5s; left:" + (left[0] + offset[0]) + "px;";
                 document.getElementById('image_3').style = "transition: .5s; left:" + (left[0] + offset[0] * 2) + "px;";
-                // 春(桜)
+                // 春
                 fall_petal_1_PC();
                 // 梅雨
                 fall_rain_PC();
@@ -57,13 +57,13 @@ setInterval(function () {
                 document.getElementById('image_1').style = "transition: .5s; left:" + left[1] + "vw;";
                 document.getElementById('image_2').style = "transition: .5s; left:" + (left[1] + offset[1]) + "vw;";
                 document.getElementById('image_3').style = "transition: .5s; left:" + (left[1] + offset[1] * 2) + "vw;";
-                // 桜
+                // 春
                 fall_petal_1_tablet();
                 // 梅雨
                 fall_rain_tablet();
                 // 秋
                 fall_petal_2_tablet();
-                // 冬(雪)
+                // 冬
                 fall_snow_tablet();
             } else {
                 // カルーセル画像
@@ -76,7 +76,7 @@ setInterval(function () {
                 fall_rain_phone();
                 // 秋
                 fall_petal_2_phone();
-                // 冬(雪)
+                // 冬
                 fall_snow_phone();
             }
             break;
