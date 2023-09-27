@@ -54,7 +54,7 @@ function fall_petal_1_PC() {
                     }
                     do {
                         rand = Math.floor(Math.random() * 12);
-                    } while(rand < 7);
+                    } while (rand < 7);
                     document.getElementById('petal_' + id++).style = "background-image: url('./image/sakura.png'); background-size: 100% 100%; position: absolute; top: -5vw; left:" + obj_left + "%; width: 5vw; height: 5vw; animation-name:" + anim_name + "; animation-delay:" + delay + "s; animation-duration:" + rand + "s; animation-timing-function:ease-out; animation-direction:normal; animation-iteration-count: infinite;";
                     obj_left += 6.3;
                 }
