@@ -54,7 +54,7 @@ function fall_petal_2_tablet() {
                     }
                     do {
                         rand = Math.floor(Math.random() * 8);
-                    } while(rand < 5);
+                    } while (rand < 5);
                     document.getElementById('petal_' + id++).style = "background-image: url('./image/momiji.png'); background-size: 100% 100%; position: absolute; top: -10vw; left:" + obj_left + "vw; width: 5vw; height: 5vw; animation-name:" + anim_name + "; animation-delay:" + delay + "s; animation-duration:" + rand + "s; animation-timing-function:ease-out; animation-direction:normal; animation-iteration-count: infinite;";
                     obj_left += 6.2;
                 }
