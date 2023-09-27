@@ -74,7 +74,7 @@ function fall_snow_phone() {
                     }
                     do {
                         rand = Math.floor(Math.random() * 20);
-                    } while(rand < 8);
+                    } while (rand < 8);
                     document.getElementById('snow_' + id++).style = "position: absolute; top: -0.5vw; left:" + obj_left + "%; width: 0.5vw; height: 0.5vw; border-radius: 50%; background-color: rgba(255,255,255,0.5); animation-name: fall_snow; animation-delay:" + delay + "s; animation-duration:" + rand +"s; animation-timing-function:ease-out; animation-direction:normal; animation-iteration-count: infinite;";
                     obj_left += 1.047;
                 }
