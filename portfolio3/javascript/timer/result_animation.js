@@ -114,7 +114,6 @@ function result_animation() {
         load_obj_size_1 = 2;
         load_obj_size_2 = 1;
         unit = "vw";
-
     } else {
         load_obj_size_1 = 2;
         load_obj_size_2 = 1;
