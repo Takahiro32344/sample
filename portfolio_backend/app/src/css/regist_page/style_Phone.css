@@ -1,0 +1,107 @@
+/*  スマホ  */
+
+@media screen and (max-width: 769px) {
+    h1 {
+        font-size: 7vw;
+    }
+
+    .form-wrapper {
+        margin-top: 15vw;
+        margin-bottom: 15vw;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .display-PC {
+        display: none;
+    }
+
+    .birth-form {
+        text-align: left;
+        width: 80vw;
+        margin-bottom: 5vw;
+    }
+
+    .birth-form .margin-left {
+        margin-left: 20.5vw;
+    }
+
+    .birth-form .select-margin {
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+    }
+
+    .gender-form {
+        text-align: left;
+        margin-bottom: 5vw;
+    }
+
+    label {
+        font-size: 5vw;
+    }
+
+    select {
+        text-align: center;
+        width: 40vw;
+        font-size: 5vw;
+    }
+
+    .btn-pos {
+        margin-top: 2vw;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button {
+        margin-bottom: 3vw;
+        cursor: pointer;
+        font-size: 5vw;
+        color: white;
+        background-color: #0080ff;
+        border-color: #0080ff;
+        border-radius: 10px;
+        width: 80vw;
+        height: 15vw;
+    }
+
+    .form-border .margin {
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+    }
+
+    .margin-top {
+        margin-top: 30px;
+    }
+
+    .regist-form {
+        margin: 0 auto;
+        display: flex;
+        width: 80vw;
+    }
+
+    input {
+        font-size: 5vw;
+        width: 80vw;
+        height: 7vw;
+        margin-bottom: 3vw;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .alert {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 5vw;
+        color: red;
+    }
+}

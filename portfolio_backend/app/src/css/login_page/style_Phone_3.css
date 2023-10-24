@@ -1,0 +1,39 @@
+/*  スマホスタイル  */
+
+@media screen and (max-width: 769px) {
+    .form-wrapper {
+        margin-top: 10vw;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 6vw;
+    }
+
+    h2 {
+        max-width: 80vw;
+        font-size: 3.5vw;
+    }
+
+    input {
+        font-size: 3vw;
+        margin-right: 1vw;
+    }
+
+    button {
+        font-size: 3vw;
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .alert {
+        color: red;
+        font-size: 2vw;
+    }
+}

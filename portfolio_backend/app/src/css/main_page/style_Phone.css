@@ -1,0 +1,1005 @@
+/*  スマホスタイル  */
+
+@media screen and (max-width: 769px) {
+    img {
+        object-fit: cover;
+    }
+    .display-PC {
+        display: none;
+    }
+
+    .side-bar-wrapper {
+        display: none;
+    }
+
+    .bg-color-man1 {
+        background-color: #80d0ff;
+    }
+    .bg-color-man2 {
+        background-color: #50a0ff;
+    }
+
+    .bg-color-woman1 {
+        background-color: pink;
+    }
+
+    .bg-color-woman2 {
+        background-color: palevioletred;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 20vw;
+        box-shadow: 0.2vw 0.2vw 0.5vw gray;
+    }
+
+    .header .image {
+        width: 12vw;
+        height: 12vw;
+        margin-left: 3vw;
+        border-radius: 50%;
+    }
+
+    .status {
+        display: flex;
+        align-items: center;
+        word-break: keep-all;
+        max-width: 68vw;
+        margin-left: 1.8vw;
+        min-height: 16vw;
+        max-height: 18vw;
+        font-size: 1.5vw;
+        background-color: rgba(255,255,255,0.7);
+        border-radius: 5px;
+    }
+
+    .status p {
+        word-break: break-all;
+        line-height: 3.5vw;
+        max-width: 70vw;
+        font-size: 2vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .menu {
+        position: relative;
+        margin-right: 2vw;
+        width: 8vw;
+        height: 7.1vw;
+    }
+
+    .menu .border-1 {
+        background-color: white;
+        width: 100%;
+        height: 1vw;
+        border-radius: 0.5vw;
+    }
+
+    .menu .border-2 {
+        background-color: white;
+        width: 100%;
+        height: 1vw;
+        border-radius: 0.5vw;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    .menu .border-3 {
+        background-color: white;
+        width: 100%;
+        height: 1vw;
+        border-radius: 0.5vw;
+    }
+
+    .menu-list {
+        text-align: center;
+        display: none;
+        position: absolute;
+        top: 15vw;
+        right: 1.8vw;
+        width: 60vw;
+        background-color: white;
+        border-radius: 1vw;
+        border: solid 2px gray;
+    }
+
+    .menu-list form div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vw;
+        border-bottom: solid 1px gray;
+    }
+
+    .menu-list .margin {
+        height: 12vw;
+    }
+
+    .menu-list .margin-top {
+        margin-top: 2.5vw;
+    }
+
+    .menu-list .info-mark-Phone {
+        position: absolute;
+        width: 2vw;
+        height: 2vw;
+        background-color: red;
+        border-radius: 50%;
+        opacity: 0;
+    }
+
+    .menu-list .menu-item-1 {
+        text-align: center;
+        word-break: break-all;
+        width: 100%;
+        border-bottom: solid 2px gray;
+        border-top-left-radius: 0.7vw;
+        border-top-right-radius: 0.7vw;
+        font-size: 4vw;
+    }
+
+    .menu-item-1 p {
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        color: white;
+        max-width: 50vw;
+        word-break: break-all;
+        margin: 0 auto;
+    }
+
+    .menu-list button {
+        width: 100%;
+        height: 100%;
+        font-size: 4vw;
+        background: none;
+        border: none;
+    }
+
+    .menu-list .logout {
+        height: 100%;
+    }
+
+    /*  メインコンテンツ  */
+
+    h1 {
+        font-size: 7vw;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    textarea {
+        resize: none;
+        outline: none;
+    }
+    input {
+        outline: none;
+    }
+
+    .main-content-position {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        top: 15vw;
+        left: 0;
+    }
+
+    .main-content-wrapper {
+        position: relative;
+        margin-top: 10vw;
+        margin-bottom: 30vw;
+    }
+
+
+    .btn-color-man {
+        border-color: #50a0ff;
+        background-color: #50a0ff;
+    }
+
+    .btn-color-woman {
+        border-color: palevioletred;
+        background-color: palevioletred;
+    }
+
+    /*  掲示板  */
+
+    .board-text {
+        font-size: 4vw;
+        width: 70vw;
+        height: 50vw;
+        margin-bottom: 6vw;
+    }
+
+    .btn-post {
+        color: white;
+        width: 40vw;
+        height: 10vw;
+        font-size: 4vw;
+        border-radius: 1vw;
+        margin-bottom: 10vw;
+    }
+
+    .bullentin-board-wrapper {
+        margin-bottom: 10vw;
+    }
+
+    .bullentin-board-wrapper .date {
+        font-size: 3vw;
+        margin-bottom: -1vw;
+    }
+
+    .bullentin-board-wrapper button {
+        margin-bottom: -5vw;
+        font-size: 3vw;
+        color: white;
+        width: 15vw;
+        height: 7vw;
+        border-radius: 1vw;
+    }
+
+    .text-wrapper {
+        font-size: 4vw;
+        background-color: rgba(255,255,255,0.7);
+        border-radius: 1.5vw;
+        box-shadow: 2px 2px 4px gray;
+    }
+    .text-wrapper p {
+        font-size: 4vw;
+        text-align: left;
+        word-break: break-all;
+        max-width: 70vw;
+        padding: 5vw;
+    }
+
+    .date {
+        font-size: 1.8vw;
+    }
+
+    .btn-color-man {
+        border-color: #50a0ff;
+        background-color: #50a0ff;
+    }
+
+    .btn-color-woman {
+        border-color: palevioletred;
+        background-color: palevioletred;
+    }
+
+    /*  チャット  */
+
+    .chat-history-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .chat-history-page-btn-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vw;
+    }
+
+    .info-chat-room {
+        max-width: 80vw;
+        font-size: 2.5vw;
+    }
+
+    .chat-history-page-btn-wrapper p {
+        font-size: 4vw;
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+
+    .chat-history-page-btn-wrapper button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4vw;
+        border-radius: 50%;
+        width: 10vw;
+        height: 10vw;
+        color: white;
+    }
+
+    .chat-room-wrapper {
+        font-size: 3vw;
+        width: 85vw;
+        background-color: white;
+        box-shadow: 2px 2px 4px gray;
+        margin-bottom: 20px;
+        margin-left: 1.5vw;
+        margin-right: 1.5vw;
+        border-radius: 1vw;
+    }
+
+    .chat-room-wrapper .padding {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2vw;
+    }
+
+    .chat-room-wrapper .flex {
+        display: flex;
+        align-items: center;
+    }
+
+    .chat-room-wrapper img {
+
+        margin-right: 1vw;
+        width: 12vw;
+        height: 12vw;
+        border-radius: 50%;
+    }
+
+    .chat-room-wrapper .chat-not-read-counter {
+        margin-left: 1.5vw;
+    }
+
+    .chat-room-wrapper button {
+        font-size: 3vw;
+        color: white;
+        margin-left: 2vw;
+        border-radius: 5px;
+        height: 7vw;
+    }
+
+    .chat-wrapper {
+        border-radius: 20px;
+        width: 90vw;
+        min-height: 70vw;
+        background-color: white;
+        box-shadow: 2px 2px 4px gray;
+    }
+    .chat-wrapper .padding {
+        padding: 2vw;
+    }
+
+    .chat-wrapper .message-wrapper {
+        margin-bottom: 0px;
+    }
+
+    .chat-wrapper .message-wrapper img {
+        width: 10vw;
+        height: 10vw;
+        border-radius:  50%;
+    }
+
+    .chat-wrapper .text-align-right {
+        text-align: right;
+    }
+
+    .chat-wrapper .text-align-left {
+        text-align: left;
+    }
+
+    .chat-wrapper .message-wrapper .text-1 {
+        font-size: 4vw;
+        text-align: left;
+        margin-top: 5vw;
+        color: white;
+        padding: 2vw;
+        display: inline-block;
+        box-sizing: border-box;
+        max-width: 70vw;
+        word-break: break-all;
+        box-shadow: 2px 2px 4px gray;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+
+    .chat-wrapper .message-wrapper .read {
+        text-align: right;
+        font-size: 2vw;
+        margin-top: -2vw;
+        margin-bottom: -2.5vw;
+    }
+    .chat-wrapper .message-wrapper .time {
+        font-size: 2vw;
+        margin-bottom: 3.3vw;
+    }
+
+    .chat-wrapper .message-wrapper .text-2 {
+        font-size: 4vw;
+        text-align: left;
+        margin-top: 5vw;
+        padding: 2vw;
+        display: inline-block;
+        box-sizing: border-box;
+        max-width: 70vw;
+        word-break: break-all;
+        box-shadow: 2px 2px 4px gray;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+
+    .chat-form-wrapper {
+        border-top: solid 1px gray;
+        width: 100%;
+        position: fixed;
+        bottom: 0vw;
+        left: 0vw;
+    }
+
+    .chat-form-wrapper .chat-area-wrapper {
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .chat-area-wrapper textarea {
+        font-size: 4vw;
+        width: 45vw;
+        height: 8vw;
+        margin-left: 2vw;
+        margin-right: 1vw;
+    }
+
+    .chat-area-wrapper button {
+        color: white;
+        font-size: 3vw;
+        border-radius: 0.5vw;
+    }
+
+    .chat-area-wrapper div button {
+        margin-left: 1vw;
+        margin-right: 0vw;
+    }
+
+    /*  ユーザー検索  */
+
+    .search-box-form {
+        margin-bottom: 10vw;
+    }
+
+    .search-box-form input {
+        font-size: 4vw;
+        width: 60vw;
+        height: 8vw;
+        margin-bottom: 3vw;
+    }
+
+    .search-box-form button {
+        margin-top: 3vw;
+        font-size: 4vw;
+        width: 50vw;
+        height: 10vw;
+    }
+
+    .search-box-form select {
+        text-align: center;
+        width: 10vw;
+        height: 3.8vw;
+        margin-right: 10px;
+        font-size: 4vw;
+        margin-bottom: 3vw;
+        width: 40vw;
+        height: 7vw;
+    }
+
+    .search-user-wrapper {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .search_user_list_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .search-user-wrapper .user-status-form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .search-user-wrapper .button-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .search-user-wrapper .button-wrapper .margin {
+        display: flex;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+
+    .search-user-wrapper .button-wrapper button {
+        border-radius: 10px;
+        font-size: 20px;
+        color: white;
+        width: 120px;
+        height: 50px;
+    }
+
+    .search-user-wrapper .margin-top {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search-user-wrapper .page-search {
+        font-size: 7vw;
+        margin-left: 7vw;
+        margin-right: 7vw;
+    }
+
+    .search-user-wrapper .btn-change-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 7vw;
+        color: white;
+        border-radius: 50%;
+        width: 12vw;
+        height: 12vw;
+    }
+
+    .search-user-wrapper .button-wrapper .btn-favorite {
+        margin-left: 40px;
+        width: 200px;
+    }
+
+    .search-user-wrapper p {
+        font-size: 4vw;
+    }
+
+    .search-user-wrapper .user-status-form button {
+        border-radius: 3vw;
+        margin-bottom: 20vw;
+        width: 70vw;
+        height: 90vw;
+    }
+
+    .search-user-wrapper form button img {
+        border-radius: 50%;
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .detail-data-wrapper {
+        border-radius: 2vw;
+        width: 70vw;
+        background-color: white;
+        box-shadow: 2px 2px 4px gray;
+    }
+
+    .detail-data-wrapper .flex {
+        display: flex;
+        justify-content: center;
+    }
+
+    .detail-data-wrapper p {
+        max-width: 50vw;
+        word-break: break-all;
+        font-size: 4vw;
+    }
+
+    .detail-data-wrapper img {
+        border-radius: 50%;
+        width: 25vw;
+        height: 25vw;
+    }
+
+    .detail-data-wrapper .text-align {
+        text-align: center;
+    }
+
+    .detail-data-wrapper .padding {
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        padding-top: 8vw;
+        padding-bottom: 8vw;
+    }
+
+    .detail-data-wrapper .button-wrapper {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 70vw;
+    }
+
+    .detail-data-wrapper .button-wrapper button {
+        width: 40vw;
+        height: 10vw;
+        font-size: 4vw;
+        border-radius: 1vw;
+    }
+
+    .detail-data-wrapper .button-wrapper .btn-favorite {
+        font-size: 3vw;
+        width: 40vw;
+        height: 10vw;
+        margin-top: 5vw;
+        margin-left: 0;
+    }
+
+    .detail-data-wrapper .button-wrapper .margin {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 5vw;
+        margin-left: 0;
+        width: 70vw;
+    }
+
+    .detail-data-wrapper .btn-return {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 5vw;
+        text-align: center;
+    }
+
+    .detail-data-wrapper .btn-return button {
+        border-radius: 1vw;
+        font-size: 4vw;
+        width: 40vw;
+        height: 10vw;
+        color: white;
+    }
+
+    .search-user-wrapper .user-bullentin-wrapper {
+        margin-bottom: 0px;
+    }
+
+    .search-user-wrapper .user-bullentin button {
+        border-radius: 1vw;
+        font-size: 3vw;
+        color: white;
+        width: 15vw;
+        height: 7vw;
+    }
+
+    .search-user-wrapper .user-bullentin-wrapper {
+        margin-bottom: 8vw;
+    }
+
+    .user-bullentin-wrapper p {
+        font-size: 3vw;
+        text-align: left;
+        margin-bottom: 0vw;
+    }
+
+    .search-user-wrapper .user-bullentin-text-wrapper {
+        background-color: white;
+        border-radius: 1vw;
+        width: 70vw;
+        box-shadow: 2px 2px 4px gray;
+    }
+
+    .user-bullentin-wrapper .padding {
+        font-size: 4vw;
+        word-break: break-all;
+        max-width: 65vw;
+        text-align: left;
+        padding: 3vw;
+    }
+
+    .user-list-wrapper {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .user-list-wrapper .flex-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .list-data-wrapper {
+        width: 85vw;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px gray;
+        font-size: 3vw;
+        margin-left: 1.5vw;
+        margin-right: 1.5vw;
+        margin-bottom: 3vw;
+    }
+
+    .list-data-wrapper .padding {
+        padding: 2vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .list-data-wrapper .flex {
+        display: flex;
+        align-items: center;
+    }
+
+    .list-data-wrapper img {
+        margin-right: 10px;
+        border-radius: 50%;
+        width: 11vw;
+        height: 11vw;
+    }
+
+    .list-data-wrapper button {
+        margin-left: 2vw;
+        border-radius: 0.6vw;
+        font-size: 2.5vw;
+        color: white;
+        height: 6vw;
+    }
+
+    .list-page-btn-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vw;
+    }
+
+    .list-page-btn-wrapper .page-list {
+        font-size: 4vw;
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+
+    .list-page-btn-wrapper .btn-change-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4vw;
+        color: white;
+        border-radius: 50%;
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .list-user-bullentin .user-bullentin-wrapper {
+        margin-bottom: 6vw;
+    }
+
+    .list-user-bullentin button {
+        color: white;
+        width: 15vw;
+        height: 7vw;
+        font-size: 3vw;
+        border-radius: 1vw;
+    }
+
+    .list-user-bullentin .user-bullentin-text-wrapper {
+        width: 70vw;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 2px 2px 4px gray;
+    }
+
+    .detail-data-wrapper .button-wrapper-list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .detail-data-wrapper .button-wrapper-list .btn-chat {
+        border-radius: 1vw;
+        color: white;
+        width: 40vw;
+        height: 10vw;
+        font-size: 4vw;
+    }
+
+    .button-wrapper-list button {
+        margin-left: 1vw;
+        margin-right: 1vw;
+        height: 5vw;
+        border-radius: 10px;
+        font-size: 2vw;
+    }
+
+    .button-wrapper-list .margin {
+        margin-top: 5vw;
+    }
+
+    /*  設定  */
+    .btn-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 90vw;
+    }
+
+    .btn-wrapper button {
+        font-size: 4vw;
+        border-radius: 1vw;
+        width: 75vw;
+        height: 20vw;
+        margin: 3vw;
+    }
+
+    .personal-data-wrapper {
+        font-size: 4vw;
+        background-color: rgba(255,255,255,0.7);
+        border-radius: 10px;
+        width: 70vw;
+        box-shadow: 2px 2px 4px gray;
+    }
+
+    .personal-data-wrapper img {
+        border-radius: 50%;
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .personal-data-wrapper p {
+        text-align: left;
+        word-break: break-all;
+        max-width: 55vw;
+    }
+
+    .personal-data-wrapper button {
+        margin-top: 2vw;
+        font-size: 4vw;
+        color: white;
+        width: 40vw;
+        height: 10vw;
+        border-radius: 1vw;
+    }
+    .personal-data-wrapper .padding {
+        padding-top: 4vw;
+        padding-bottom: 10vw;
+    }
+
+    .main-content-wrapper .display-PC-setting {
+        display: none;
+    }
+
+    .change-data-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5vw;
+        font-size: 3vw;
+        width: 80vw;
+        background-color: rgba(255,255,255,0.7);
+        border-radius: 1vw;
+        box-shadow: 2px 2px 4px gray;
+    }
+
+    .change-data-wrapper table {
+        width: 90vw;
+        height: 90vw;
+    }
+
+    .change-data-wrapper .margin {
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+
+    .change-data-wrapper .margin-bottom {
+        margin-bottom: 5vw;
+    }
+
+    .change-data-wrapper button {
+        margin-top: 4vw;
+        font-size: 3vw;
+        color: white;
+        width: 40vw;
+        height: 8vw;
+        border-radius: 0.5vw;
+    }
+
+    .change-data-wrapper form button {
+        font-size: 3vw;
+        color: white;
+        width: 40vw;
+        height: 8vw;
+        border-radius: 0.5vw;
+    }
+
+    .change-data-wrapper input {
+        font-size: 3vw;
+        width: 50vw;
+        height: 5vw;
+    }
+
+    .change-data-wrapper .input-image-Phone {
+        font-size: 3vw;
+        height: 8vw;
+    }
+
+    .change-data-wrapper .change-address-form-wrapper {
+        display: flex;
+        margin-left: 30px;
+    }
+
+    .change-data-wrapper .change-address-2 {
+        width: 30vw;
+        margin-left: 5vw;
+    }
+
+    .change-data-wrapper select {
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+        text-align: center;
+        font-size: 3vw;
+        width: 30vw;
+    }
+
+    .change-data-wrapper .padding {
+        padding-top: 40px;
+        padding-bottom: 70px;
+    }
+
+    .change-password-wrapper {
+        width: 90vw;
+        background-color: rgba(255,255,255,0.7);
+        border-radius: 1vw;
+        box-shadow: 2px 2px 4px gray;
+    }
+
+    .change-password-wrapper .padding {
+        padding-top: 4vw;
+        padding-bottom: 5vw;
+    }
+
+    .change-password-wrapper input {
+        margin-bottom: 3vw;
+        font-size: 4vw;
+        width: 70vw;
+        height: 6vw;
+    }
+
+    .change-password-wrapper .btn-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column-reverse;
+        width: 40vw;
+        margin-left: -5vw;
+    }
+
+    .change-password-wrapper button {
+        margin-top: 2vw;
+        font-size: 4vw;
+        color: white;
+        width: 40vw;
+        height: 10vw;
+        border-radius: 1vw;
+    }
+
+    .alert {
+        margin-top: 0vw;
+        margin-bottom: 0vw;
+        font-size: 3vw;
+        color: red;
+    }
+
+    @-moz-document url-prefix() {
+        .bullentin-board-wrapper button {
+            margin-bottom: -4vw;
+        }
+    }
+}

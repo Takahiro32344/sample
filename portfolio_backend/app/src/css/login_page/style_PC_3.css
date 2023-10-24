@@ -1,0 +1,28 @@
+@media screen and (min-width: 1100px) {
+    .form-wrapper {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    input {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .alert {
+        color: red;
+        font-size: 20px;
+    }
+}
