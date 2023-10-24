@@ -309,7 +309,6 @@
 
     #tab_1 {
         color: white;
-        border-bottom: solid 1px gray;
         background-color: #50c080;
         text-underline-offset: 0.5em;
         border-top-left-radius: 10px;
@@ -317,29 +316,27 @@
         padding-left: 13.3px;
         padding-right: 13.3px;
         padding-top: 20px;
-        padding-bottom: 21px;
+        padding-bottom: 23px;
     }
 
     #tab_2 {
-        border-bottom: solid 1px gray;
         background-color: #70f0a0;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         padding-left: 13.3px;
         padding-right: 13.3px;
         padding-top: 20px;
-        padding-bottom: 21px;
+        padding-bottom: 23px;
     }
 
     #tab_3 {
-        border-bottom: solid 1px gray;
         background-color: #70f0a0;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         padding-left: 13.3px;
         padding-right: 13.3px;
         padding-top: 20px;
-        padding-bottom: 21px;
+        padding-bottom: 23px;
     }
 
     .margin {
