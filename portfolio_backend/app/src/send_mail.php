@@ -21,7 +21,7 @@
             if ($user_data != NULL) {
                 mb_language("Japanese");
                 mb_internal_encoding("UTF-8");
-                mb_send_mail($_POST['mail'], "ID及びパスワード再設定について", "ID:{$user_data[0]['id_name']}\r\r\rパスワード再設定URL:https://idwq3-ew-f3bf-ds.www2.jp/ocnasnf/ifj34pmlffw/d77euf/reset_password.php?id_name={$user_data[0]['id_name']}");
+                mb_send_mail($_POST['mail'], "ID及びパスワード再設定について", "ID:{$user_data[0]['id_name']}\r\r\rパスワード再設定URL:https://test.wwww.jp/test/app/src/reset_password.php?id_name={$user_data[0]['id_name']}");
 
                 echo "
                     <div class='message-wrapper'>
