@@ -36,7 +36,6 @@
 
     .image {
         margin-left: 1.8vw;
-        object-fit: cover;
         width: 8vw;
         height: 8vw;
         border-radius: 50%;
