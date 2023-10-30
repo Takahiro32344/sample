@@ -1379,7 +1379,7 @@
                                                 </div>
                                                 <div class='margin-bottom'>
                                                     <label>公開設定</label><br>
-                                                    <p style='font-size: 0;' class='alert-publish-Phone'></p>
+                                                    <p style='font-size: 0;' class='alert-publish-setting-Phone'></p>
                                                     <label>メールアドレス<label>
                                                     <select class='publish-email-Phone'>
                                                         <option>公開しない</option>
