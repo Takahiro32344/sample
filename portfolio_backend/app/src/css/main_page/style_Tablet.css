@@ -100,7 +100,7 @@
     }
 
     .side-bar-wrapper {
-        position: absolute;
+        position: fixed;
         top: 0vw;
         left: 0vw;
         width: 15vw;
