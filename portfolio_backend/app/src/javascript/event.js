@@ -636,6 +636,18 @@ $('.btn-change-tel-Phone').on('click', function() {
 
 // メールアドレス及び電話番号公開設定
 // PC
+$('.publish-email-PC').on('focusin', function() {
+    $('.alert-publish-setting-PC').text('').css('font-size', '0');
+}).on('focusout', function() {
+    $('.alert-publish-setting-PC').text('').css('font-size', '0');
+});
+
+$('.publish-tel-PC').on('focusin', function() {
+    $('.alert-publish-setting-PC').text('').css('font-size', '0');
+}).on('focusout', function() {
+    $('.alert-publish-setting-PC').text('').css('font-size', '0');
+});
+
 $('.btn-change-publish-PC').on('click', function() {
     if (click == 0) {
         click = 1;
@@ -647,6 +659,18 @@ $('.btn-change-publish-PC').on('click', function() {
 });
 
 // スマホ
+$('.publish-email-Phone').on('focusin', function() {
+    $('.alert-publish-setting-Phone').text('').css('font-size', '0');
+}).on('focusout', function() {
+    $('.alert-publish-setting-Phone').text('').css('font-size', '0');
+});
+
+$('.publish-tel-Phone').on('focusin', function() {
+    $('.alert-publish-setting-Phone').text('').css('font-size', '0');
+}).on('focusout', function() {
+    $('.alert-publish-setting-Phone').text('').css('font-size', '0');
+});
+
 $('.btn-change-publish-Phone').on('click', function() {
     if (click == 0) {
         click = 1;
