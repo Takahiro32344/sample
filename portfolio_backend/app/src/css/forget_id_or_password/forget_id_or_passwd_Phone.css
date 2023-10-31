@@ -1,0 +1,68 @@
+@media screen and (max-width: 769px) {
+    h1 {
+        max-width: 80vw;
+        text-align: center;
+        font-size: 5vw;
+    }
+
+    .message-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    h2 {
+        text-align: center;
+        max-width: 80vw;
+        font-size: 3.2vw;
+    }
+
+    .form-wrapper {
+        margin-top: 10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .reset-password-form {
+        text-align: center;
+    }
+
+    .reset-password-form input {
+        margin-bottom: 2vw;
+        width: 60vw;
+    }
+
+    input {
+        width: 40vw;
+        height: 4.5vw;
+        font-size: 3vw;
+        margin-right: -1vw;
+    }
+
+    .reset-password-form button {
+        margin-top: 2vw;
+        width: 17vw;
+        height: 8vw;
+        font-size: 3.5vw;
+    }
+
+    button {
+        font-size: 3vw;
+        margin-left: 3vw;
+    }
+
+    p {
+        text-align: center;
+        font-size: 1.5vw;
+        color: red;
+        margin-bottom: 0;
+    }
+}
